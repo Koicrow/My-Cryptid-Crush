@@ -14,6 +14,11 @@ label day_3:
     scene black
     with fade
     
+    "The next day..."
+    
+    scene black
+    with fade
+    
     "I'm enjoying a lazy evening when the ringing of the doorbell startles me right off my bed. I hit my ankle on my dresser on the way down."
     
     p "Ow! Coming!"

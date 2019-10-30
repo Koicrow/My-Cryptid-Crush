@@ -89,8 +89,7 @@ label start:
     scene bg cemetery
     with fade
     
-    play music "batu.ogg" fadeout 1
-    show eileen happy
+    play music "forest_night.ogg" fadeout 1
     
     b "Are you sure we're allowed to be here?"
     
@@ -198,13 +197,17 @@ label intro_feather3:
     
     p "You know what, it's too dark to really see any clues. Maybe we should come back when—"
     
-    "My foot slips on a wet leaf, and I fall right down the slope that Bea warned me about. I let out a short-lived scream before landing in a crumpled heap at the base of the hill."
+    "My foot slips on a wet leaf, and I fall right down the slope that Bea warned me about."
     
     scene bg forest
-    with hpunch and fade
+    with vpunch 
+
+    "I let out a short-lived scream before landing in a crumpled heap at the base of the hill."
     
     "I groan as I prop myself up. My arms are covered in scrapes, and there's something slimy stuck on my left pant leg that I really hope isn't deer poop."
     
+    stop music fadeout 1
+
     "Then I freeze. In front of me is a shadowy figure, staring right back at me."
     
     "Distantly, I hear Bea shouting my name, but I stay silent. I don't even breathe. Is it a serial killer? A wild animal?"
@@ -517,6 +520,8 @@ label intro_yin_yang4:
     hide greg
     with char
     
+    stop music fadeout 1
+
     "I spin around and my flashlight illuminates a giant worm rearing its head through the trees."
     
     p "Holy fucking guacamole."
@@ -593,6 +598,8 @@ label intro_met_batu3:
     scene bg cottage
     with fade
     
+    play music "mothman.ogg" fadeout 1
+
     "I turn off my flashlight as I enter the doorway. The cabin is surprisingly nice on the inside, if a little overzealous on the floral wallpaper. It must have been one hell of a renovation project."
     
     "There's a little TV, a kitchenette, an antique chess set, and a bunch of other stuff. But you'll forgive me for glossing over the decor, because I'm much more interested in the figure sitting on the couch."
@@ -903,6 +910,8 @@ menu:
     
 label intro_run1:
     
+    stop music fadeout 1
+
     "I open the camera, subtlely angle the phone upward, and take a picture with all three cryptids in the frame. However, because I'm an idiot, the shutter sound immediately alerts the others to what I'm doing."
     
     "For a second, there's a silence in the cabin."
@@ -917,7 +926,7 @@ label intro_run1:
     show batu mouth
     with char
     
-    w "Get back here, human!"
+    w "Get back here, human!" with hpunch
     
     show batu angry
     with char
@@ -937,6 +946,8 @@ label intro_run1:
     scene bg forest
     with fade
     
+    play music "forest_night.ogg" fadeout 1
+
     "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth, right?"
     
     "I run for what seems like hours but was probably minutes, then squat down, gasping. I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
@@ -1051,12 +1062,13 @@ label intro_stay1:
     
     scene black
     with fade
-    
+    stop music fadeout 1.0
+
     "Suddenly, the lights in the cabin turn off, making the room almost pitch black. I hear a low chuckle nearby."
     
     qh "Well, well, well. What's a tasty morsel like you doing all tied up?"
     
-    jump intro_who4
+    jump intro_holly1
     
 label intro_holly1:
     
@@ -1079,7 +1091,7 @@ label intro_who1:
     
     qh "Oh, don't worry. This will be over in less than a second..."
     
-    jump intro_who3
+    jump intro_who4
     
 label intro_who2:    
     
@@ -1087,7 +1099,7 @@ label intro_who2:
     
     qh "Oh, good, have you given up already? That'll make this even easier..."
     
-    jump intro_who3
+    jump intro_who4
     
 label intro_who3:
     
@@ -1103,6 +1115,8 @@ label intro_who3:
     
 label intro_who4:
     
+    stop music fadeout 1
+
     "A gaunt, winged figure steps out of the shadows, standing far taller than any human. It has two winding antlers and a sneering skull for a face."
     
     "I'm petrified. I know I sounded scared when I met Greg for the first time, but in comparison, that was like a trip to Make-A-Moose Workshop."
@@ -1203,6 +1217,8 @@ label intro_recover4:
     
     h "Aw, shucks, thanks!"
     
+    play music "kangaroo.ogg" fadeout 1
+
     "Frankie offers me a hand. I'm taken by surprise, but I accept it and pull myself off the ground. Her touch is surprisingly cold, and I catch a whiff of peppermint."
     
     "Her gaze lingers on me a little longer than what I would consider normal. She looks vaguely shimmery, like a distant road on a summer day. She's wrapped up in several sweaters and a scarf."
@@ -1463,7 +1479,9 @@ label intro_deal3:
     
     "The five cryptids move over to the kitchen and sit around a circular table. Mothman puts out five cups of tea. He hurries over to offer me one as well, but I politely refuse."
     
-    "They start discussing in earnest about curfews, message systems, Holland's latest ping-pong match, stuff like that. They seem especially concerned about the upcoming Fishtrap Cryptid Festival. No wonder – it's the largest gathering of cryptozoologists on this side of the Mississippi."
+    "They start discussing in earnest about curfews, message systems, Holland's latest ping-pong match, stuff like that."
+    
+    "They seem especially concerned about the upcoming Fishtrap Cryptid Festival. No wonder – it's the largest gathering of cryptozoologists on this side of the Mississippi."
     
     "How do I know? My dad used to take me every year. A full four days of vendors hawking Nessie plushies, arguments about Bigfoot's muscle mass, and way more {i}Monster Mash{/i} than any one person should be subjected to. "
     
@@ -1473,7 +1491,7 @@ label intro_deal3:
     
     "Anyway, by the time the meeting adjourns, the light of dawn is starting to dribble through the windows. Despite the earlier rush of adrenaline, my head is drooping hard."
     
-    "Mothman comes to untie me, then hands me a Ziploc bag full of cookies."
+    "Mothman comes to untie me, then hands me a plastic bag full of cookies."
     
     show moth neutral
     with char
@@ -1500,6 +1518,8 @@ label intro_deal3:
     scene bg lakeday
     with fade
     
+    play music "forest_morning.wav" fadeout 1
+
     "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
     
     p "Um, everyone, I have something I want to say."

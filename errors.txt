@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/greg2.rpy", line 1165: end of line expected.
-    show yang neutral 2 with char at slightright
-                                  ^
+File "game/script.rpy", line 1220: could not parse statement.
+    play music "kangaroo.ogg" fadeout 1    "Frankie offers me a hand. I'm taken by surprise, but I accept it and pull myself off the ground. Her touch is surprisingly cold, and I catch a whiff of peppermint."
+                                           ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Oct 30 16:30:58 2019
+Wed Oct 30 17:37:20 2019
