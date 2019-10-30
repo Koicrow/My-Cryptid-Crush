@@ -59,7 +59,7 @@ label day1_water3:
     ya "Jeez, what a prick. It's not like you're in charge of the prices."
     
     show yang at slightright
-    with move
+    with char
     
     show yin annoyed at slightleft
     with char
@@ -75,11 +75,7 @@ label day1_water3:
     
     p "Get back under the counter, there are cameras in here!"
     
-    hide yin
-    with char
-    
-    show yang at center
-    with move
+    hide yin with moveoutbottom
     
     "I shove Yin back out of sight, ignoring their squawk of complaint."
     

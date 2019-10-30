@@ -108,7 +108,7 @@ label start:
     
     p "Honestly, why do I even bring you along?"
     
-    b "I'm wondering the same thing. I could be in bed right now, watching cooking videos."
+    b "I'm wondering the same thing. I could be in bed right now, watching TV shows."
     
     b "Oh, my poor, poor pillow...{w=.5} How I miss you..."
     

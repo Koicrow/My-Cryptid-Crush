@@ -9,6 +9,11 @@ label day_2:
     
     $ save_name = "Day 2"
     
+    scene black
+    with fade
+    
+    "The next day..."
+    
     scene bg dorm
     with fade
     
@@ -145,7 +150,9 @@ label day2_tension1:
     
     "The conversation turns to some Korean drama she's watching, which I usually couldn't care less about, but at least it takes the attention off of me. The topic of cryptids doesn't come up again."
     
-    "Eventually, Bea has to go to some sort of presentation about data science, or information science, or something. I always tune out whenever she tries to explain the details. She accompanies me out of her dorm, and I give her a jaunty wave before cycling away."
+    "Eventually, Bea has to go to some sort of presentation about data science, or information science, or something. I always tune out whenever she tries to explain the details."
+    
+    "She accompanies me out of her dorm, and I give her a jaunty wave before cycling away."
     
     jump day2_tension3
    
@@ -159,7 +166,9 @@ label day2_tension2:
     
     b "Oh, I see. Let me walk you out."
     
-    "Bea lets me go without further interrogation, since apparently she has plans too. She's going to some sort of presentation about data science, or information science, or something. I always tune out whenever she tries to explain the details. She accompanies me out of her dorm, and I give her a jaunty wave before cycling away."
+    "Bea lets me go without further interrogation, since apparently she has plans too. She's going to some sort of presentation about data science, or information science, or something. I always tune out whenever she tries to explain the details."
+    
+    "She accompanies me out of her dorm, and I give her a jaunty wave before cycling away."
     
     jump day2_tension3
    
@@ -177,11 +186,8 @@ label day2_tension3:
     
     "Yin pokes their head out of my bag, taking exaggerated deep breaths. Yang pops up behind them."
     
-    show yin at slightleft
-    with move
-    
-    show yang neutral 2 at slightright
-    with char
+    show yin at slightleft with char
+    show yang neutral 2 at slightright with char
     
     ya "It {i}was{/i} getting a little stuffy in there."
     

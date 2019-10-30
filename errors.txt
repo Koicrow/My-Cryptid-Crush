@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/greg1.rpy", line 465: expected 'simple_expression' not found.
-    show yin at 
-                ^
+File "game/greg2.rpy", line 1165: end of line expected.
+    show yang neutral 2 with char at slightright
+                                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Oct 30 01:59:12 2019
+Wed Oct 30 16:30:58 2019

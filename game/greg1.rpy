@@ -179,7 +179,7 @@ label greg1_message6:
     yi "No we don't! We're in agreement about lots of things."
     
     show yin at slightleft
-    with move
+    with char
     
     show yang neutral 2 at slightright
     with char
@@ -463,7 +463,7 @@ label greg1_get_out1:
     
     yi "Finally! I thought I'd never see the sun again!"
     
-    show yin at slightleft with move
+    show yin at slightleft with char
     show yang close at slightright with char
     
     ya "I can't believe you have to do that for eight hours every day."
@@ -647,7 +647,7 @@ label greg1_bike3:
 
     yi "Look! There's the churro stand!"
     
-    show yin at slightleft with move
+    show yin at slightleft with char
     show yang sad at slightright with char
 
     ya "Oh, thank Nessie. I think I'm about to barf."
@@ -1123,7 +1123,7 @@ label greg1_bye4:
     p "Oh, shush."   
     p "Wait.{w=.5} Really?"
     
-    show yin at slightleft with move
+    show yin at slightleft with char
     show yang neutral at slightright with char
     
     ya "Hm... Could be. He's never this nice."
