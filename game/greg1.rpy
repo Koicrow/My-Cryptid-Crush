@@ -107,7 +107,7 @@ label greg1_message3:
     
     "I return to scrolling through social media as I wait for a response. My phone doesn't vibrate until ten agonizing minutes later."
     
-    g "{size=+7}{font=Iceland-Regular.ttf}{i}Not bad, but it'd be even better with u ;*{/i}{/font}{/size}"
+    g "{size=+7}{font=Iceland-Regular.ttf}{i}Not bad, but it'd be even better with u{/i}{/font}{/size} ;*"
     
     g "{size=+7}{font=Iceland-Regular.ttf}{i}Also, who is this{/i}{/font}{/size}"
     
@@ -226,6 +226,9 @@ label greg1_message6:
     p "Um,{w=.5} hello,{w=.5} can I help you?"
     
     "The stranger pulls out something that looks like a dog biscuit, if dog biscuits were purple. Then he speaks in a familiar voice."
+    
+    show greg sun smirk
+    with char
     
     g "Hey, have you seen any imps around here?"
     

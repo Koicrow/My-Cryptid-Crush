@@ -12,6 +12,7 @@ label day_1:
     $ save_name = "Day 1"
     
     scene black
+    with fade
     
     "The next day..."
     
@@ -97,7 +98,9 @@ label day1_water3:
     
     "I idly unpause the video I was watching on my phone."
     
-    "{i}Paranormal investigator Albert Heo analyzed the 2007 footage from south Fresno soon after it was captured.{/i}{w} The video cuts to a scrawny-looking guy with a Guy Fieri goatee. {i}\"It's not Bigfoot, it's not Almas, it's not anything we've ever seen before. But my gut tells me it's real. My best guess? Some sort of insectoid extra-terrestrial.\"{/i}"
+    "{i}Paranormal investigator Albert Heo analyzed the 2007 footage from south Fresno soon after it was captured.{/i}{w} The video cuts to a scrawny-looking guy with a Guy Fieri goatee."
+    
+    "{i}\"It's not Bigfoot, it's not Almas, it's not anything we've ever seen before. But my gut tells me it's real. My best guess? Some sort of insectoid extra-terrestrial.\"{/i}"
     
     "The voice-over takes over the mantle as a blurry clip of a white figure plays.{w} {i}But not everyone is so convinced. Is the Fresno Nightwalker an alien? Or is it just a pair of pajama pants?{/i}"
     

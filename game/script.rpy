@@ -63,13 +63,13 @@ label start:
     
     "I love cryptids."
 
-    "My parents were cryptid hunters. I grew up on stories of Bigfoot and Nessie, Chupacabra, and the Ahool."
+    "My parents were cryptid hunters. I grew up on stories of Bigfoot and Nessie, Chupacabra and the Ahool."
     
-    "In my teenage years, I devoured every cryptozoology book and documentary I could get my hands on. Even that series about Bigfoot that went 9 seasons without finding so much as a butt hair."
+    "In my teenage years, I devoured every cryptozoology book and documentary I could get my hands on. Even that series about Bigfoot that went nine seasons without finding so much as a butt hair."
     
-    "They call it \"pseudoscience.\"{w=.5} Who am I to argue? I dropped out of college. I'm no more a scientist than that guy who sells hand-painted phone cases at the corner everyday."
+    "They call it a pseudoscience.{w=.5} Who am I to argue? I dropped out of college. I'm no more a scientist than that guy who sells hand-painted phone cases at the corner every day."
 
-    "But I {i}know{/i} cryptids are real."
+    "But I {i}know{/i} that cryptids are real."
     
     "Maybe not all of them.{w=.5} That photograph of Nessie from 1934 is obviously fake, for example. You'd have to be an idiot not to realize that the ripple pattern doesn't like up with—"
     
@@ -77,7 +77,7 @@ label start:
     
     "But I've always known, deep inside, that there are creatures across the Earth that we've never seen before. Creatures that we just happened to miss. Creatures waiting to be discovered."
     
-    "So how could it be a coincidence that a cryptid was spotted within my own little hometown?"
+    "So how could it be a coincidence that a cryptid was spotted just minutes from my own home?"
     
     scene bg cemetery
     with fade
@@ -93,11 +93,11 @@ label start:
     
     p "It's pitch black,{w=.5} no one's going to notice unless you keep yapping!"
     
-    "I flick on my flashlight and shine it around. It really is pitch black in the cemetery. I briefly illuminate the sign that reads: FISHTRAP CEMETERY, FISHTRAP, WISCONSIN."
+    "I flick on my flashlight and shine it around. It really is dark here, the stars covered up by looming clouds. I briefly illuminate the sign that reads: FISHTRAP CEMETERY, FISHTRAP, WISCONSIN."
     
     b "Besides, even if Mothman was here, wouldn't he have left by now?"
     
-    p "Yes, that's why we're looking for {i}clues{/i}, before the crowd of rabid cryptozoologists come ruining the evidence."
+    p "Yes, that's why we're looking for {i}clues{/i}, before the crowd of rabid cryptozoologists comes ruining the evidence."
     
     p "Honestly, why do I even bring you along?"
     
@@ -111,7 +111,11 @@ label start:
     
     b "Don't tell me you're going in {i}there{/i}."
     
-    p "I {i}have{/i} to. That's the point of the investigation.{w} Look, there's something on the ground!"
+    p "Oh, come on, it's just a forest. What kind of cryptid hunter is scared off by a couple of trees?"
+
+    b "Okay, but when you get mauled by a bear, I'm not going to come save you."
+
+    p "Look, there's something on the ground!"
     
     "I hop the fence, poking myself on the fenceposts a little more than I intended, and land with a crunch{nw}"
     with vpunch
@@ -121,7 +125,7 @@ label start:
     
     p "I know, I know, I see it."
     
-    "I carefully pick up a big, brown feather with my free hand, careful not to damage it.{w}Now, I'm no forensics expert, but I can tell it came from..."
+    "I carefully pick up a big, brown feather with my free hand, careful not to damage it.{w} Now, I'm no forensics expert, but I can tell it came from..."
     
     menu:
 
@@ -151,9 +155,7 @@ label intro_feather2:
     
     p "It's a feather from some sort of big bird."
     
-    b "Uh, okay?"
-    
-    b "Are we birdwatching now?"
+    b "Uh, okay? Are we birdwatching now?"
     
     p "No, just, you know, thought it looked cool."
     
@@ -177,19 +179,15 @@ label intro_feather3:
     
     b "Be careful! What if there's a murderer in there?"
     
-    p "What? Don't be ridiculous. There's no murderers in Fishtrap."
-    
-    b "Aren't you scared?!"
-    
-    p "Me?{w=.5} Pshh.{w=.5} Naw."
-    
-    "I have to admit, I'm bending the truth a little. Don't get me wrong, I'm not usually a fearful person. It's just very dark and quiet and maybe my hands are shaking a little from the cold,{w=.5} so what?"
+    p "Pfft, don't be ridiculous. There's no murderers in Fishtrap."
     
     "Something scurries through the leaves right next to me, and I let out the tiniest yelp."
     
     b "What? What is it?"
     
     p "Nothing! Nothing! Just a mouse or something."
+
+    "Don't get me wrong, I'm not usually a fearful person. It's just very dark and quiet and maybe my hands are shaking a little from the cold, so what?"
     
     p "You know what, it's too dark to really see any clues. Maybe we should come back when—"
     
@@ -202,7 +200,9 @@ label intro_feather3:
     
     "Then I freeze. In front of me is a shadowy figure, staring right back at me."
     
-    "Distantly, I hear Bea shouting my name, but I stay silent. I don't even breathe. Is it a serial killer? A wild animal?{w=.5} Or could it be what I was looking for all along?"
+    "Distantly, I hear Bea shouting my name, but I stay silent. I don't even breathe. Is it a serial killer? A wild animal?"
+    
+    "...Or is it what I was looking for all along?"
     
     "I pat the ground beside me until I find the flashlight. Trembling, I lift the beam to illuminate the figure, and see..."
     
@@ -234,7 +234,7 @@ label intro_figure1:
     
     show greg neutral
     
-    qg "You mean you don't recognize me?"
+    qg "You mean you don't know what I am?"
     
     jump intro_figure4
     
@@ -256,7 +256,7 @@ label intro_figure3:
     
     p "It's just... I've never seen anyone like you."
     
-    qg "You mean you don't recognize me?"
+    qg "You mean you don't know what I am?"
     
     jump intro_figure4
     
@@ -272,15 +272,13 @@ label intro_figure4:
     
     show greg annoyed
     
-    qg "No, I'm not a vampire!"
-    
-    qg "A vampire. Oh, that's rich."
+    qg "No, I'm not a vampire!{w=.5} A vampire. Oh, that's rich."
     
     qg "Humans catch a glimpse of some furry flying thing and they just {i}know{/i} it's Mothman, but they couldn't recognize a gargoyle if it bit them on the ass."
     
     p "A gargoyle!"
     
-    p "Oh my god...{w=.5} You're a real cryptid!"
+    p "Holy shit...{w=.5} You're a real cryptid!"
     
     "The stories are flashing through my head now.{w} Houston, Texas. A bat-winged monstrosity that kills dogs and drains them of their blood."
     
@@ -290,9 +288,7 @@ label intro_figure4:
     
     qg "Yep, that's me, Mr. Real Cryptid."
     
-    qg "Bigfoot's toe, Batu is going to {i}kill{/i} me. I wasn't supposed to be seen anywhere near humans."
-    
-    qg "But how am I supposed to account for them raining down on top of my head?!"
+    qg "Bigfoot's toe, Batu is going to {i}kill{/i} me. I wasn't supposed to be seen anywhere near humans. But how am I supposed to account for them raining down on top of my head?!"
     
     "Distantly, I hear Bea yelling."
     
@@ -308,7 +304,7 @@ label intro_figure4:
     
     qg "Charmed. I'm Greg."
     
-    g "You're coming with me. Maybe Batu will know what to do with you."
+    g "Come with me. Maybe Batu will know what to do with you."
     
     "He starts pulling me through the forest by the hand."
     
@@ -335,9 +331,7 @@ label intro_hand1:
     
     g "Are you going to come with me and meet some other cryptids face-to-face? Or are you going to run back to your friend and probably never see one of us again?"
     
-    p "Well..."
-    
-    p "I guess when you put it like {i}that{/i}, it's a no-brainer."
+    p "Well, I guess when you put it like [i]that[/i], it's a no-brainer."
     
     g "Thought so. Watch your step!"
     
@@ -355,7 +349,7 @@ label intro_hand2:
     
 label intro_hand3:
     
-    "Greg leaps over a rotting log, disappearing out of sight. I pull out my phone to shoot Bea a quick text message – {i}be back soon, don't worry about me{/i} – then I hop over the log as well."
+    "Greg leaps over a rotting log, disappearing out of sight. I pull out my phone to shoot Bea a quick text message – {i}Be back soon, don't worry about me{/i} – then I hop over the log as well."
     
     p "Hey! Wait up!"
     
@@ -364,14 +358,14 @@ label intro_hand3:
     show yang annoyed
     with char
     
-    qya "Tsk, tsk. Typical Greg, spreading his terrible influence yet again. You should turn back while you still can."
+    qya "Tisk, tisk. Typical Greg, spreading his terrible influence yet again. You should turn back while you still can."
     
     "To my astonishment, there's a tiny monster hovering over my right shoulder. Another voice speaks into my left ear."
     
     show yang at slightright
     with move
     
-    show yin shock at slightright
+    show yin shock at slightleft
     with char
     
     qyi "Are you kidding? Look, kid, you're having the time of your life! Forget about your stinky human friend!"
@@ -490,8 +484,6 @@ label intro_yin_yang3:
     
     yi "And my entertainment!"
     
-    p "I see."
-    
     jump intro_yin_yang4
     
 label intro_yin_yang4:
@@ -576,13 +568,13 @@ label intro_met_batu2:
     
 label intro_met_batu3:
     
-    "{i}(The giant worm ignores you.){/i}"
+    "The giant worm ignores me."
     
     show batu neutral
     
     qw "Let's convene inside. You'd better have a good explanation for this."
     
-    g "Of course, of course. My explanation is going to blow you away, I promise."
+    g "Of course, of course. There's a very logical explanation for all of this, I promise."
     
     hide batu
     with char
@@ -596,7 +588,7 @@ label intro_met_batu3:
     
     "I turn off my flashlight as I enter the doorway. The cabin is surprisingly nice on the inside, if a little overzealous on the floral wallpaper. It must have been one hell of a renovation project."
     
-    "There's a little TV, a kitchenette, an antique chess set, and a bunch of other stuff. But you'll forgive me for glossing over the decor, because my attention was immediately drawn to the figure sitting on the couch."
+    "There's a little TV, a kitchenette, an antique chess set, and a bunch of other stuff. But you'll forgive me for glossing over the decor, because I'm much more interested in the figure sitting on the couch."
     
     p "{i}GASP{/i}"
     
@@ -617,7 +609,7 @@ label intro_met_batu3:
     
     p "No, no, no, you don't understand! I'm your biggest fan!"
     
-    "He has the head of a moth, a wingspan that's probably wider than I'm tall, and a plume of fluff around his neck that looks like the softest scarf in the world. In short, he's everything I ever expected."
+    "He has the head of a moth, a wingspan that's probably wider than I'm tall, and a plume of fluff around his neck that looks like the softest scarf in the world. In short, he's everything I ever hoped for."
     
     hide moth
     with char
@@ -633,7 +625,7 @@ label intro_met_batu3:
     
     g "I adopted you. You don't count."
     
-    "You know that part of the story where the protagonist thinks, \"I must be dreaming,\" even though they're obviously not dreaming?{w=.5} Well, I'm ashamed to say, this is that part."
+    "You know that part of the story where the protagonist thinks \"I must be dreaming,\" even though they're obviously not dreaming?{w=.5} Well, I'm ashamed to say, this is that part."
     
     "I subtlely pinch my arm, just to make sure it's really Mothman sitting on the couch in front of me. It's unbelievable. After so many years of research and daydreaming and terrible horror films, I finally found him."
     
@@ -655,23 +647,13 @@ label intro_met_batu3:
     
     g "Yeah, but that's what everyone knows you by."
     
-    show batu neutral
-    
-    w "What if we called you the American death gargoyle. How would you like that?"
-    
-    show greg annoyed
-    
-    g "Excuse you.{w=.5} I'm one quarter German."
-    
     hide greg
     with char
     
     show batu at center
     with move
     
-    p "The Mongolian death worm! I've heard of you!"
-    
-    p "From the Gobi desert, right? Poisonous enough to cause instant death with a single touch?"
+    p "The Mongolian death worm! I've heard of you! From the Gobi desert, right? Poisonous enough to cause instant death with a single touch?"
     
     show batu irritated
     
@@ -679,6 +661,8 @@ label intro_met_batu3:
     
     p "But it really is you!"
     
+    w "In the flesh."
+
     p "Ohmigosh, I have so many questions. How many of you are there? Can you all talk? Are sasquatches real too? Wait wait wait, what I really want to know about is..."
     
     hide batu
@@ -744,7 +728,7 @@ label intro_question3:
     show batu neutral at right
     with char
     
-    w "She's real. But she's not a dinosaur. More like a... six-legged crocodile."
+    w "She's real. But she's not a dinosaur. More like a six-legged crocodile."
     
     p "Fascinating."
     
@@ -770,39 +754,35 @@ label intro_question4:
     show batu neutral at right
     with char
     
-    w "I am exceedingly interested in the answer to this question as well."
+    w "I am also exceedingly interested in the answer to this question."
     
     g "Eheh, well, you see."
     
-    g "I was high-tailing it to the lake, so I wouldn't keep you all waiting, when I happened across this poor human who'd fallen down the hill."
+    g "I was rushing to the lake, so I wouldn't keep you all waiting, when I happened across this poor human who'd fallen down the hill."
     
-    g "Now, I couldn't just let them walk away after seeing my face. So I invited them along instead! They get to meet more cryptids, we get to not have our faces all over the news tomorrow morning. It's a win-win!"
+    g "I couldn't just let them walk away after seeing my face. So I invited them along instead! They get to meet more cryptids, we get to not have our faces all over the news tomorrow morning. It's a win-win."
     
     show batu angry
     
     w "But we can't keep them here forever. What happens once they return to their human family?"
     
-    g "Ah, yes. Well."
-    
-    g "I didn't think that far ahead."
+    g "Ah, yes. Well. I didn't think that far ahead."
     
     show batu irritated
     
     "Batu sighs, squeezing his four eyes shut."
     
-    w "This is exactly why we needed to have this meeting. Because of Mothman's recent incident, the area is going to be crawling with cryptid hunters. We have to be on high alert."
+    w "This is {i}exactly{/i} why we needed to have this meeting. Because of Mothman's recent incident, the area is going to be crawling with cryptid hunters. We have to be on high alert."
     
-    hide greg
+    hide batu
     with char
     
-    show moth mix at left
+    show moth mix at right
     with char
     
     m "Sorry..."
     
-    show batu neutral
-    
-    w "Mothman, you really have to stop swooping dramatically over humans in the dead of night."
+    g "Mothman, you really have to stop swooping dramatically over humans in the dead of night."
     
     show moth startled:
         xalign -0.405
@@ -811,15 +791,15 @@ label intro_question4:
     
     p "Excuse me, don't {i}I{/i} get a say on what happens to me?"
     
-    w "Unfortunately, no."
-    
     hide moth
     with char
-    
-    show greg neutral at left
+
+    show batu neutral at right
     with char
+
+    w "Unfortunately, no."
     
-    g "Sorry, buddy. I know you're used to being king of the world back in humantown, but this is strictly cryptid business."
+    g "Sorry, buddy. This is strictly cryptid business."
     
     g "Besides, are you saying that if we let you go right now, you {i}wouldn't{/i} go blabbing to all your friends?"
     
@@ -846,7 +826,7 @@ label intro_blab1:
     show greg annoyed
     with char
     
-    g "Listen, you humans are assholes to people just because they have a different skin color than you. How do you think your friends would feel about a giant talking worm?"
+    g "Listen, you humans are dicks to people just because they have a different skin color than you. How do you think your friends would feel about a giant talking worm?"
     
     hide greg
     show batu neutral
@@ -899,12 +879,12 @@ label intro_blab3:
     
     g "Better not take that call."
     
-    p "Yeah, no problem."
+    p "Yeah, of course."
     
     hide greg
     with char
     
-    "As I decline the call, I realize that if I want to escape, this might be my best shot. If I stick around any longer, it sounds like I might end up tied to a radiator, or worse. And there's no one standing between me and the door."
+    "As I decline the call and mute my phone, I realize that if I want to escape, this might be my best shot. It sounds like I might end up tied to a radiator if I stick around, or worse. And there's no one standing between me and the door."
     
 menu:
 
@@ -916,7 +896,7 @@ menu:
     
 label intro_run1:
     
-    "I open the camera, subtlely angle the phone upward, and take a picture with all three cryptids in the frame. However, because I'm an idiot, I didn't account for the annoying shutter sound that the phone makes."
+    "I open the camera, subtlely angle the phone upward, and take a picture with all three cryptids in the frame. However, because I'm an idiot, the shutter sound immediately alerts the others to what I'm doing."
     
     "For a second, there's a silence in the cabin."
     
@@ -950,7 +930,7 @@ label intro_run1:
     scene bg forest
     with fade
     
-    "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth for long, right?"
+    "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth, right?"
     
     "I run for what seems like hours but was probably minutes, then squat down, gasping. I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
     
@@ -961,19 +941,15 @@ label intro_run1:
     
     p "Yin? {i}gasp{/i}...{w=.5} What are you... {i}gasp{/i}...{w=.5} doing here?"
     
-    show yin at slightleft
-    with move
-    
-    show yang close at slightright
-    with char
-    
-    ya "I'm here too, despite my better judgement."
-    
     show yin shock
     
     yi "Why am I here? Are you kidding? This is the most fun I've had since the police caught Greg tagging the water tower!"
     
-    show yang neutral 2
+    show yin at slightleft
+    with move
+    
+    show yang neutral 2 at slightright
+    with char
     
     ya "We're here because Greg asked us to keep an eye on you."
     
@@ -993,7 +969,7 @@ label intro_stay1:
     
     $ stay = True
     
-    "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of something called a \"death worm\" strikes me as a bad idea."
+    "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of someone called a \"death worm\" strikes me as a bad idea."
     
     show batu neutral
     with char
@@ -1034,7 +1010,7 @@ label intro_stay1:
     
     show moth neutral
     
-    "Before long, I'm seated in an armchair with my ankle tied to a chair leg. Mothman makes sure I had a padded seat and plenty of mobility. It's not even the most uncomfortable I've been all day."
+    "Before long, I'm seated in an armchair with my ankle tied to a chair leg. I still have a pretty big range of movement, and Mothman made sure my seat was well-padded. It's not even the most uncomfortable I've been all day."
     
     hide moth
     with char
@@ -1044,7 +1020,7 @@ label intro_stay1:
     show yang close
     with char
     
-    ya "What did I say, dear? You should have turned around while you had the chance."
+    ya "What did I say? You should have turned around while you had the chance."
     
     show yang at slightright
     with move
@@ -1077,7 +1053,7 @@ label intro_stay1:
     
 label intro_holly1:
     
-    "The voice is like the sound of snapping branches. I freeze for a second then, jump to my feet and fumble for the flashlight that's still in my back pocket."
+    "The voice is like the sound of snapping branches. I freeze for a second, then jump to my feet and fumble for the flashlight that's still in my back pocket."
     
 menu:
 
@@ -1094,13 +1070,13 @@ label intro_who1:
     
     p "Who's there? I've already dealt with gargoyles and giant worms tonight! I'm not in the mood for any shenanigans!"
     
-    qh "Oh, don't worry. This will be over in a second..."
+    qh "Oh, don't worry. This will be over in less than a second..."
     
     jump intro_who3
     
 label intro_who2:    
     
-    "I stay completely silent, thinking back to those documentaries about predators who can only detect moving targets. My only movement is the trembling of my arms."
+    "I stay completely silent, thinking back to those documentaries about predators that can only detect moving targets. My only movement is the trembling of my arms."
     
     qh "Oh, good, have you given up already? That'll make this even easier..."
     
@@ -1108,7 +1084,7 @@ label intro_who2:
     
 label intro_who3:
     
-    "My fight-or-flight response must have been triggered, because my first impulse is to lob the flashlight in the direction of the voice."
+    "My fight-or-flight response must have been triggered, because my first impulse is to lob the flashlight in the direction of the voice. Which I do."
     
     p "Stay away!"
     
@@ -1120,7 +1096,7 @@ label intro_who3:
     
 label intro_who4:
     
-    "A gaunt, winged figure steps out of the shadows, standing far taller than any human. It has two winding antlers and a perpetually sneering skull for a face."
+    "A gaunt, winged figure steps out of the shadows, standing far taller than any human. It has two winding antlers and a sneering skull for a face."
     
     "I'm petrified. I know I sounded scared when I met Greg for the first time, but in comparison, that was like a trip to Make-A-Moose Workshop."
     
@@ -1167,7 +1143,7 @@ label intro_holly2:
     
     p "Oh... okay... vegetarian..."
     
-    "I sit down on the floor, put my head in my hands, and breathe deeply, trying to calm my racing heart."
+    "I collapse on the floor, put my head in my hands, and breathe deeply. My racing heart refuses to calm down."
     
     "Now that Holland is wearing a contrite epression, with her claw-like hands clasped together, she isn't half as scary. If I wasn't recovering from a near-death experience, I would almost call her endearing."
      
@@ -1188,9 +1164,7 @@ label intro_recover1:
     
     p "Yes, I'm fine... just need a moment to recover...{w=.5} waiting for my life to stop flashing before my eyes..."
     
-    h "Oh my gosh, I'm sorry!! I know I look scary, but I'm actually very nice, I promise!"
-    
-    h "You don't think I traumatized them, do you?"
+    h "Oh my gosh, I'm sorry!! I know I look scary, but I'm actually very nice, I promise! I didn't traumatize you, did I?"
     
     qf "At this point, I wouldn't be surprised."
     
@@ -1218,15 +1192,15 @@ label intro_recover4:
     
     h "I don't get it. Humans think I look terrifying. I don't look {i}that{/i} bad, right, Frankie?"
     
-    f "Don't sweat it, you look fine. That top really suits you."
+    f "Don't sweat it, you look great. That top really suits you."
     
     h "Aw, shucks, thanks!"
     
     "Frankie offers me a hand. I'm taken by surprise, but I accept it and pull myself off the ground. Her touch is surprisingly cold, and I catch a whiff of peppermint."
     
-    "Her gaze lingers on me a little longer than normal, but I can't tell what she's thinking. She looks vaguely shimmery, like a distant road on a summer day. She's wrapped up in several sweaters and a scarf."
+    "Her gaze lingers on me a little longer than what I would consider normal. She looks vaguely shimmery, like a distant road on a summer day. She's wrapped up in several sweaters and a scarf."
     
-    "She's also a kangaroo. I know that sounds like some sort of obscure insult, but I'm serious. She has the head and legs of a kangaroo, and otherwise the body of a human woman."
+    "She's also a kangaroo. I know that sounds insulting, but I'm serious. She has the head and legs of a kangaroo, and otherwise the body of a human."
     
     f "I'm Frankie. This prankster over here is Holland."
     
@@ -1249,7 +1223,7 @@ label intro_run2:
     show moth mix
     with char
     
-    m "Um, actually, Batu wants me to bring the human back to the cabin. Sorry."
+    m "Um, actually, Batu wants me to bring the human back to the cabin as soon as possible. Sorry."
     
     p "{i}Sigh.{/i} All that running for nothing."
     
@@ -1266,7 +1240,7 @@ label intro_run2:
     
     m "Oh yes, the carrots are just coming in!"
     
-    f "That's awesome. I hate carrots, actually, but I'm happy for you."
+    f "That's awesome. I hate carrots, but I'm happy for you."
     
     show moth mix
     
@@ -1275,29 +1249,27 @@ label intro_run2:
     hide moth
     with char
     
-    "I briefly consider making another run for it, but I can feel Mothman's eyes trained on me. With my luck, Holland and Frankie are probably supernaturally fast too. Oh, well. I know when I'm beat."
+    "I briefly consider making another run for it, but I can feel Mothman's eyes trained on me. I have a feeling I've lost my chance of escape for good."
     
     "We walk through the forest as a group. The cryptids chatter the entire way."
     
     h "...So they call me the \"Jersey Devil,\" which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
     
-    h "None of them got the description right, either. I mean, \"blood-curdling scream\"? That's a {i}very{/i} rude way to describe someone's laugh."
+    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
     
     f "What do you expect when you keep letting people see you?"
     
     h "Well, easy for {i}you{/i} to say. Not everyone can turn invisible at will, Ms. Phantom Kangaroo."
     
-    p "Oh, oh, oh! I know about phantom kangaroos!"
+    p "Oh, oh, oh! I know about phantom kangaroos! The 1978 Wisconsin sightings... That must have been you!"
     
-    p "The 1978 Wisconsin sightings... That must have been you!"
-    
-    f "Pfft. Nope. As far as I know, that's someone's pet wallaby that escaped."
+    f "Sorry to disappoint, but I think that was someone's pet wallaby."
     
     p "Oh."
     
-    h "But she HAS been spotted multiple times. Not to mention her big old kangaroo prints that she leaves everywhere!"
+    h "But she HAS been spotted before. Not to mention her big old kangaroo prints that she leaves everywhere!"
     
-    f "Well excuuuse me. If I could float, I'd be doing it already."
+    f "Well excuse me for using my feet to walk."
     
     scene bg lake
     with fade
@@ -1309,7 +1281,7 @@ label intro_run2:
     
     w "Holland, Frankie. Glad you could make it. [name], I hope you got that out of your system."
     
-    p "Ah, yes, I suppose so."
+    p "Ah, yes, I think so."
     
     show batu neutral
     
@@ -1324,7 +1296,7 @@ label intro_run2:
     
     p "Yeah, I think that about covered my exercise for the next lifetime or so."
     
-    g "Bet you wish you'd known we were going to let you go anyway, huh?"
+    g "Funny thing is, we were going to let you go anyway."
     
     jump intro_meeting
     
@@ -1332,27 +1304,25 @@ label intro_stay2:
     
     h "Oh, I didn't even finish introducing myself! They call me the \"Jersey Devil,\" which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
     
-    h "None of them got the description right, either. I mean, \"blood-curdling scream\"? That's a {i}very{/i} rude way to describe someone's laugh."
+    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
     
     f "What do you expect when you keep letting people see you?"
     
     h "Well, easy for {i}you{/i} to say. Not everyone can turn invisible at will, Ms. Phantom Kangaroo."
     
-    p "Oh, oh, oh! I know about phantom kangaroos!"
+    p "Oh, oh, oh! I know about phantom kangaroos! The 1978 Wisconsin sightings... That must have been you!"
     
-    p "The 1978 Wisconsin sightings... That must have been you!"
-    
-    f "Pfft. Nope. As far as I know, that's someone's pet wallaby that escaped."
+    f "Sorry to disappoint, but I think that was someone's pet wallaby."
     
     p "Oh."
     
-    h "But she HAS been spotted multiple times. Not to mention her big old kangaroo prints that she leaves everywhere!"
+    h "But she HAS been spotted before. Not to mention her big old kangaroo prints that she leaves everywhere!"
     
-    f "Well excuuuse me. If I could float, I'd be doing it already."
+    f "Well excuse me for using my feet to walk."
     
     h "[name], let me make it up to you for spooking you! Can I buy you a drink?{w=.5} Do you drink? Coffee is fine, too, if you'd rather."
     
-    "I might have taken her up on the offer, if I wasn't interrupted by the sound of footsteps – and one worm – descending the stairs. Batu, Mothman, and Greg appear once more."
+    "I might have taken her up on the offer, if I wasn't interrupted by the sound of footsteps – and slithering – descending the stairs. Batu, Mothman, and Greg appear once more."
     
     show batu neutral
     with char
@@ -1375,9 +1345,9 @@ label intro_stay2:
     
     m "Oh yes, the carrots are just coming in!"
     
-    f "That's awesome. I hate carrots, actually, but I'm happy for you."
+    f "That's awesome. I hate carrots, but I'm happy for you."
     
-    "Greg saunters over and clasps me on the back."
+    "Greg saunters over and claps me on the back."
     
     hide moth
     with char
@@ -1471,7 +1441,7 @@ label intro_deal3:
     
     m "Oh.{w=.5} Sorry."
     
-    "I snicker, despite myself."
+    "I snicker, despite the situation I'm in."
     
     hide moth
     with char
@@ -1486,15 +1456,15 @@ label intro_deal3:
     
     "The five cryptids move over to the kitchen and sit around a circular table. Mothman puts out five cups of tea. He hurries over to offer me one as well, but I politely refuse."
     
-    "They start discussing in earnest about curfews, message systems, Holland's latest ping-pong match, stuff like that. They seem especially concerned about the upcoming Fishtrap Cryptid Festival. No wonder; it's the largest gathering of cryptozoologists on this side of the Mississippi."
+    "They start discussing in earnest about curfews, message systems, Holland's latest ping-pong match, stuff like that. They seem especially concerned about the upcoming Fishtrap Cryptid Festival. No wonder – it's the largest gathering of cryptozoologists on this side of the Mississippi."
     
     "How do I know? My dad used to take me every year. A full four days of vendors hawking Nessie plushies, arguments about Bigfoot's muscle mass, and way more {i}Monster Mash{/i} than any one person should be subjected to. "
     
     "I loved every minute of it. It was like second Christmas to me. But it's nothing compared to what's in front of me right now."
     
-    "It kinda sounds like a bad joke, if you think about it. A gargoyle, a Mongolian death worm, Mothman, the Jersey Devil, and a phantom kangaroo walk into a bar. \"Hey!\" says the bartender. \"Haven't I sighted you somewhere before?\""
+    "It kinda sounds like a bad joke. A gargoyle, a Mongolian death worm, Mothman, the Jersey Devil, and a phantom kangaroo walk into a bar. \"Hey!\" says the bartender. \"Haven't I sighted you somewhere before?\""
     
-    "Anyway, by the time the meeting adjourns, the light of dawn is starting to dribble through the windows. Despite the earlier rushes of adrenaline, my head is drooping hard."
+    "Anyway, by the time the meeting adjourns, the light of dawn is starting to dribble through the windows. Despite the earlier rush of adrenaline, my head is drooping hard."
     
     "Mothman comes to untie me, then hands me a Ziploc bag full of cookies."
     
@@ -1503,9 +1473,9 @@ label intro_deal3:
     
     m "Here's something for the way home. If you want, that is. They're homemade!"
     
-    "I take it reverently. Homemade cookies made by Mothman. {i}And they're chocolate chip.{/i}"
+    "I take it reverently. Homemade cookies made by a cryptid? [i]Hell[/i] yes. Plus, they're chocolate chip."
     
-    p "Thank you, Mothman."
+    p "Thank you so much."
     
     show moth mix
     
@@ -1514,18 +1484,16 @@ label intro_deal3:
     hide moth
     with char
     
-    w "You'll take the human back to their home, right, Greg?"
+    w "You'll take the human back, right, Greg?"
     
     g "Yeah, yeah. I'm already the messenger boy, I might as well do deliveries too."
     
-    w "Good, good. Then let's hurry. We shouldn't be out and about in the daytime."
+    w "Good. Then let's hurry. We shouldn't be out and about in the daytime."
     
     scene bg lakeday
     with fade
     
-    "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways."
-    
-    "This might be the last chance I ever get to talk to a real cryptid."
+    "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
     
     p "Um, everyone, I have something I want to say."
     
@@ -1590,7 +1558,7 @@ label intro_bye3:
     
     "I check my phone again, and I see five frantic text messages at least a dozen missed calls. Knowing Bea, she's probably registered me as a missing person already."
     
-    p "Forget Mongolian death worms, Bea's the one who's going to eat me alive."
+    p "{i}Sigh.{/i} Forget Mongolian death worms, Bea's the one who's going to eat me alive.."
     
     g "Heh. Sucks to be you."
     
@@ -1619,9 +1587,9 @@ label intro_bye3:
     show yang neutral
     with char
     
-    ya "We won't bite you, [name], but we will give you a very stern talking-to. Then we'll go tell Batu, and you'll {i}wish{/i} he'd just eaten you to begin with."
+    ya "We won't bite you, [name], but we'll tell Batu, and then you'll {i}wish{/i} you'd gotten away with just a bite."
     
-    p "Okay, okay, geez. I guess I'll think of a lie, then."
+    p "Okay, okay, geez. I guess I'll have to think of a lie."
     
     hide yin
     hide yang
@@ -1653,19 +1621,17 @@ label intro_poop_legs2:
     
     p "We sure are, rock-head."
     
-    g "Nice to meet you, human-face."
+    g "Nice to meet you, human... face."
     
-    p "Right back at ya, gargoyle-torso."
+    p "That one doesn't even make sense."
     
-    g "That one doesn't even make sense."
-    
-    p "Whatever."
+    g "Whatever."
     
     jump intro_poop_legs3
     
 label intro_poop_legs3:
     
-    "I stare apprehensively up the slope, which is covered in tangled undergrowth and likely more treacherous deer poop."
+    "I stare apprehensively up the slope, which is covered in tangled undergrowth and probably more deer poop."
     
     p "Are we just doing this the hard way, then? There has to be another way around that doesn't –{nw}"
     with hpunch
@@ -1675,7 +1641,7 @@ label intro_poop_legs3:
     
     p "Whoa, whoa, WHOA, what are you doing?!"
     
-    g "Hold still, would you? You're heavy enough without you flailing around like that!"
+    g "Hold still, would you? You're heavy enough without you flailing around like that."
     
     p "GREG! LET ME DOWN!!"
     
@@ -1688,7 +1654,7 @@ label intro_poop_legs3:
     
     p "Listen, buddy, you gotta warn someone before you just lift them into the air like that!"
     
-    g "My B, my B. Listen, I'd love to stay and chat, but I'm tired as hell and I think I can hear my rooftop calling me. Take care of Yin and Yang, alright?"
+    g "My bad, my bad. Listen, I'd love to stay and chat, but I'm tired as hell and I think I can hear my rooftop calling me. Take care of Yin and Yang, alright?"
     
     p "Alright, I will."
     
@@ -1707,7 +1673,7 @@ label intro_poop_legs3:
     
     "I watch him until I can't tell him apart from the birds wheeling through the sky. Then I'm all alone in a cemetery, with nothing but my memories to prove that I just met five cryptids in the flesh."
     
-    "Well... my memories, and a bag of cookies, and a slip of paper with five phone numbers on it."
+    "Well, my memories, and a bag of cookies, and a slip of paper with five phone numbers on it."
     
     "With a deep breath, I start the long trek back to my aparment. I take out my phone and dial Bea. Might as well get this over with."
     
