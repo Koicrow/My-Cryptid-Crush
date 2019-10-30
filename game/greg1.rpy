@@ -1131,7 +1131,7 @@ label greg1_bye4:
     
     show yin close
     
-    yi "Just a little observation of mine, kid. Take it or leave it.~"
+    yi "Just a little observation of mine, kid. Take it or leave it~"
     p "I think you're crazy."
     
     scene bg suburban

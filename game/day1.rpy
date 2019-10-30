@@ -71,7 +71,7 @@ label day1_water3:
     show yin shock
     with char
     
-    yi "Who cares? Throw off the shackles of the working class! Demand justice from the oppressors!"
+    yi "Who cares? Throw off the shackles of the working class! Sieze the means of production!!"
     
     p "Get back under the counter, there are cameras in here!"
     
