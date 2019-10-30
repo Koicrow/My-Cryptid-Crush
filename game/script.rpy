@@ -26,12 +26,19 @@ define char = Dissolve(0.05)
 default stay = False
 
 # Yin and Yang placements
+
 # Yin
-transform slightleft:
+transform midleft: # when Yin's to the left of a central figure
+    xalign 0.2
+    yalign 1.0
+transform slightleft: # when it's just Yin and Yang on the screen
     xalign 0.35
     yalign 1.0
     
 #Yang
+transform midright:
+    xalign 0.8
+    yalign 1.0
 transform slightright:
     xalign 0.65
     yalign 1.0

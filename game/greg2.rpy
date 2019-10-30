@@ -367,7 +367,7 @@ label greg2_socks4:
     
     g "Thanks, I guess."
     
-    p "Don't mention it.~"
+    p "Don't mention it~"
     
     "Greg continues down the corridor. Yin, Yang and I follow, giggling among ourselves."
     
