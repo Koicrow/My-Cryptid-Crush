@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1578, in script
-    "I pocket the paper and hurry to Greg's side. We walk silently for a bit, leaves crunching underfoot. The flashlight is unnecesssary, as the sun is up, casting long shadows through the forest."
-IOError: Couldn't find file 'forest_morning.ogg'.
+  File "game/script.rpy", line 1525, in script
+    p "Um, everyone, I have something I want to say."
+IOError: Couldn't find file 'forest_morning.wav'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1578, in script
-    "I pocket the paper and hurry to Greg's side. We walk silently for a bit, leaves crunching underfoot. The flashlight is unnecesssary, as the sun is up, casting long shadows through the forest."
+  File "game/script.rpy", line 1525, in script
+    p "Um, everyone, I have something I want to say."
   File "C:\Program Files\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "C:\Program Files\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
@@ -38,9 +38,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "C:\Program Files\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'forest_morning.ogg'.
+IOError: Couldn't find file 'forest_morning.wav'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 My Cryptid Crush 1.0
-Wed Oct 30 17:39:59 2019
+Wed Oct 30 17:45:33 2019

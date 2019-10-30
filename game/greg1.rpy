@@ -231,6 +231,7 @@ label greg1_message6:
     "The stranger pulls out something that looks like a dog biscuit, if dog biscuits were purple. Then he lifts his sunglasses and speaks in a familiar voice."
     
     show greg smirk
+    play music "greg.ogg" fadeout 1
 
     g "Hey, have you seen any imps around here?"
     
@@ -453,7 +454,9 @@ label greg1_get_out1:
 
     "The door jangles as he exits, leaving the store in silence once again. I sigh and turn my phone back on. Time for more conspiracy theory videos."
     
-    "The rest of my shift passes without incident. The most interesting thing that happens is a guy buying a bottle of orange soda and a single condom. My replacement takes my spot behind the counter – my manager never came back, come to think of it – and I head outside with Yin and Yang hidden in my bag."
+    "The rest of my shift passes without incident. The most interesting thing that happens is a guy buying a bottle of orange soda and a single condom." 
+    
+    "My replacement takes my spot behind the counter – my manager never came back, come to think of it – and I head outside with Yin and Yang hidden in my bag."
     
     scene bg gas
     with fade
@@ -496,6 +499,8 @@ label greg1_global_warming3:
     
     scene bg plaza
     with fade
+
+    play music "batu.ogg" fadeout 1
     
     "Soon, we arrive at what I assume Greg meant by the \"big fountain.\""
     
@@ -610,6 +615,8 @@ label greg1_bike1:
 
     scene bg plaza
     with fade
+
+    play music "mothman.ogg" fadeout 1
     
     "It's not flying, but cycling with Greg is exhilarating in its own way. Also, not particularly safe. We manage to arrive at the main plaza without any accidents. Well, without any major accidents. Let's just say we arrived in one piece."
     
@@ -637,6 +644,8 @@ label greg1_bike2:
     scene bg plaza
     with fade
     
+    play music "batu.ogg" fadeout 1
+
     "Despite me shouting bad words for the first few minutes of the trip, we manage to arrive at the main plaza without any accidents. Well, without any major accidents. Let's just say we arrived in one piece."
     
     jump greg1_bike3
@@ -1136,6 +1145,8 @@ label greg1_bye4:
     
     scene bg suburban
     with fade
+
+    play music "forest_night.ogg" fadeout 1
     
     "I unlock my bike and start the long trip back to Fishtrap. The air is starting to get a little crisper, and the setting sun throws shadows over the street. My mind drifts as the skyscrapers turn into discount Indian restaurants and then into trees."
     

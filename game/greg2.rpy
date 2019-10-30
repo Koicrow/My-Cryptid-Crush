@@ -106,6 +106,8 @@ label greg2_great3:
     scene bg mallex
     with fade
     
+    play music "greg.ogg" fadeout 1
+
     "One breakneck bike ride later – I'm pretty sure I broke the speed limit just by pedaling – we arrive at the shopping center. It's Friday, so the parking lot is jam-packed. Makes me glad I don't have a car, for once."
     
     "I roll my bike around a pile of browning leaves and chain it to a bike rack. I scan the skies for a second, wondering if Greg's wheeling far above. Then I realize that's silly, and dial his number instead."
@@ -189,6 +191,8 @@ label greg2_hi4:
     
     scene bg mall
     with fade
+
+    play music "mothman.ogg" fadeout 1
     
     show greg neutral with char
 
@@ -1136,7 +1140,7 @@ label greg2_leave1:
     
     scene bg foodcourt
     with fade
-    
+
     show greg neutral
 
     "Before long, I step over a discarded, mustard-stained napkin that's a sure sign of our destination."
@@ -1410,6 +1414,8 @@ label greg2_noodles4:
     scene bg mallex
     with fade
     
+    stop music fadeout 1
+
     "I brace myself against the wave of cold as I go through the door. Then I look up at the sky."
     
     p "Hey, would you look at that."
@@ -1424,14 +1430,14 @@ label greg2_noodles4:
         g "Sure did."
         
         scene bg mallsnow
-        
+
         "Tiny snowflakes meander through the air, in no rush to reach their destination. Then they hit the pavement and disappear, as if they're made of nothing. It's very poetic, if you're the kind of person who's into that."
         
         jump greg2_snow3
         
     p "Sun finally came out."
     g "Sure did."
-    
+
     "Little rays of sunlight filter through the clouds, casting dappled light onto the parking lot. It's very pretty, if you're the kind of person who's into that."
     
 label greg2_snow3:

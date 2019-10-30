@@ -13,6 +13,8 @@ label day_1:
     
     scene black
     with fade
+
+    stop music fadeout 1
     
     "The next day..."
     

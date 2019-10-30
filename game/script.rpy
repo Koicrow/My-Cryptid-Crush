@@ -206,7 +206,7 @@ label intro_feather3:
     
     "I groan as I prop myself up. My arms are covered in scrapes, and there's something slimy stuck on my left pant leg that I really hope isn't deer poop."
     
-    stop music fadeout 1
+    play music "creepy_loop.mp3" fadeout 1
 
     "Then I freeze. In front of me is a shadowy figure, staring right back at me."
     
@@ -1518,7 +1518,7 @@ label intro_deal3:
     scene bg lakeday
     with fade
     
-    play music "forest_morning.wav" fadeout 1
+    play music "forest_morning.ogg" fadeout 1
 
     "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
     

@@ -9,6 +9,8 @@ label day_2:
     
     $ save_name = "Day 2"
     
+    stop music fadeout 1
+
     scene black
     with fade
     
@@ -205,7 +207,7 @@ label day2_tension3:
     hide yang
     with char
     
-    "It's a dismal, chilly day, making me glad I brought a thick jacket with me. I stop my bike on the edge of campus, thinking about where to go next. Unlike me, Bea stayed in college, so I have to travel to her dorm to hang out. Thankfully, it's pretty close to my apartment."
+    "It's a chilly day, making me glad I brought a thick jacket with me. I stop my bike on the edge of campus, thinking about where to go next. Unlike me, Bea stayed in college, so I have to travel to her dorm to hang out. Thankfully, it's pretty close to my apartment."
     
     "I look around furtively, as if the gaggle of frat boys nearby are paying me any attention. Then I pull the Cryptid Coalition paper out of my pocket, wrestling against the autumn breeze."
     

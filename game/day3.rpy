@@ -11,11 +11,13 @@ label day_3:
     
     $ save_name = "Day 3"
     
+    stop music fadeout 1
+    
     scene black
     with fade
     
     "The next day..."
-    
+
     scene black
     with fade
     
