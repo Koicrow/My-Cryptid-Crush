@@ -2,17 +2,85 @@
 errors listed below, and try again.
 
 
-File "game/greg3.rpy", line 724: expected statement.
-    music stop fadeout 1
-                        ^
-
-File "game/greg3.rpy", line 767: end of line expected.
-    music play "kangaroo.ogg" fadeout 1
-                              ^
-
-File "game/greg3.rpy", line 1120: end of line expected.
-    music play "forest_night.ogg" fadeout 1
-                                  ^
+File "game/script.rpy", line 874: expected statement.
+(Perhaps you left out a " at the end of the first line.)
+    "I open the camera, subtlely angle the phone upward, and take a picture with all three cryptids in the frame. However, because I'm an idiot, I forgot to turn off the camera's sound.
+        
+        stop music
+        play sound "camera.ogg"
+                             ^
+        
+        "{i}Click!{/i}"
+        
+        "For a second, there's a silence in the cabin."
+        
+        p "I'm-really-sorry-bye!"
+        
+        "I turn around and sprint out the door."
+        
+        scene bg lake
+        with fade
+        
+        show batu mouth with char
+        
+        w "Get back here, human!" with hpunch
+        
+        show batu angry
+        
+        w "Mothman—"
+        m "On it!"
+        
+        hide batu
+        show moth startled
+        with char
+        
+        "I glance over my shoulder to see Mothman burst out of the cabin, his impressive wingspan blotting out the stars. Breathing hard, I duck into the treeline. "
+        
+        scene bg forest
+        with fade
+        
+        play music "forest_night.ogg" fadeout 1
+    
+        "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth, right?"
+        
+        "I run for what seems like hours but was probably minutes, then squat down, gasping. I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
+        
+        show yin neutral
+        with char
+        
+        yi "Good work, kid, I think you lost him!"
+        
+        p "Yin? {i}gasp{/i}...{w=.5} What are you... {i}gasp{/i}...{w=.5} doing here?"
+        
+        show yin shock
+        
+        yi "Why am I here? Are you kidding? This is the most fun I've had since the police caught Greg tagging the water tower!"
+        
+        show yin at slightleft
+        with move
+        
+        show yang neutral 2 at slightright
+        with char
+        
+        ya "We're here because Greg asked us to keep an eye on you."
+        
+        p "Well, you can... {i}gasp{/i}...{w=.5} go back now, because I'm... {i}gasp{/i}...{w=.5} doing completely fine on my own, thank you very much."
+        
+        "I make a halfhearted shooing motion at them. Then I hear a low chuckle from nearby."
+        
+        hide yin
+        hide yang
+        with char
+        
+        qh "Well, well, well. What's a tasty morsel like you doing wandering the forest?"
+        
+        jump intro_holly1
+        
+    label intro_stay1:
+        
+        $ stay = True
+        
+        "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of someone called a \"death worm\" strikes me as a bad idea."
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Oct 30 22:42:45 2019
+Thu Oct 31 00:07:06 2019
