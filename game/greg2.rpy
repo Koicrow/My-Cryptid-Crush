@@ -321,7 +321,7 @@ label greg2_main1:
             jump greg2_leave1
             
 label greg2_clothes1:
-    
+
     p "...Looking at some clothes?"
     
     show greg neutral
@@ -340,6 +340,9 @@ label greg2_clothes1:
     p "Aww. Cute."
 
     hide yang with char
+    
+    if renpy.music.get_playing(channel='music') != "mothman.ogg":
+        play music "mothman.ogg" fadeout 1
     
     "I gasp as we pass by a little sock stand in the center of the corridor. A particular pair catches my eye."
     
@@ -788,6 +791,9 @@ label greg2_comics1:
     p "Yeah, comics are my shit! Or they {i}were{/i} my shit. I guess I kind of grew out of them."
     
     show greg neutral
+    
+    if renpy.music.get_playing(channel='music') != "mothman.ogg":
+        play music "mothman.ogg" fadeout 1
 
     "The two of us head in its general direction. I don't have to consult the map – I could probably find it in my sleep."
     
@@ -878,7 +884,7 @@ label greg2_mountains3:
             jump greg2_genre2
         
         "Sci-fi.":
-            jump greg2_genre2
+            jump greg2_genre3
         
 label greg2_genre1:
     
@@ -1011,6 +1017,7 @@ label greg2_steal1:
     "We share a knowing smirk as we head out of the store. By the time I realize the fatal flaw in our otherwise foolproof plan, it's too late."
     
     hide greg with char
+    stop music fadeout 1
 
     "{i}BEEP.{nw}"
     with vpunch
@@ -1036,6 +1043,7 @@ label greg2_steal2:
     p "We should—"
     
     show greg shock with char
+    play music "jersey-devil.ogg" fadeout 1
 
     "Before I can continue, Greg makes the decision for me by grabbing my wrist and pulling me into the corridor."
     
@@ -1121,7 +1129,7 @@ label greg2_steal3:
     jump greg2_main1
     
 label greg2_leave1:
-    
+
     p "I'm getting kind of tired. Do you want to head home?"
     
     show greg neutral
@@ -1140,6 +1148,9 @@ label greg2_leave1:
     
     scene bg foodcourt
     with fade
+    
+    if renpy.music.get_playing(channel='music') != "mothman.ogg":
+        play music "mothman.ogg" fadeout 1
 
     show greg neutral
 

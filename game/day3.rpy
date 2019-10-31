@@ -12,7 +12,7 @@ label day_3:
     $ save_name = "Day 3"
     
     stop music fadeout 1
-    
+
     scene black
     with fade
     
@@ -102,11 +102,7 @@ label day3_alibi2:
     
     d "Too busy cryptid hunting, huh?"
     
-    p "I haven't been cryptid hunting!"
-    
-    p "That much."
-    
-    p "At least, not in the past few days."
+    p "I haven't been cryptid hunting! That much. At least, not in the past few days."
     
     "From the look on his face, I know there's a lecture brewing. But {i}maybe{/i} I can still spin this in my favor."
     
@@ -132,11 +128,7 @@ label day3_alibi3:
     
     d "Too busy cryptid hunting, huh?"
     
-    p "I haven't been cryptid hunting!"
-    
-    p "That much."
-    
-    p "At least, not in the past few days."
+    p "I haven't been cryptid hunting! That much. At least, not in the past few days."
     
     "From the look on his face, I know there's a lecture brewing. But {i}maybe{/i} I can still spin this in my favor."
     
@@ -226,41 +218,49 @@ label day3_hunting3:
     
     "I collapse on my bed and put my face in my hands. Ugh. Hanging out with cryptids really makes you forget about your regular, non-cryptid problems."
     
+    show yin neutral with char
+
     yi "You alright, kid?"
-    
     p "I'm fine. Nothing new, really."
     
+    show yin at slightleft
+    show yang neutral 2 at slightright
+    with char
+
     ya "Your father has a point. You don't want to work at a convenience store for the rest of your life."
-    
     p "I {i}know{/i}, thanks."
     
+    show yin annoyed
+
     yi "Hey, leave the kid alone! They're distressed!"
     
+    show yang close
+
     ya "They're an adult, they can handle it."
-    
-    p "What's with the \"kid\" business?! How old are you, anyway?"
-    
-    yi "Couple hundred years, why?"
-    
-    p "Goddamn. Okay, then."
-    
-    ya "Three hundred years and they still haven't lost the mentality of a child."
-    
-    yi "Hey, what's the point of living if you're not having fun?!"
+
+    show yin neutral
+    show yang neutral 2
     
     p "You know what? It's Saturday night, I have nothing to do, I'm going out. Maybe one of the others is free."
     
     "I hop off my bed and start hunting down my clothes."
     
+    show yang annoyed
+
     ya "Remember what your father said."
-    
     p "He said no cryptid {i}hunting{/i}, not cryptid {i}dating{/i}."
     
+    show yin shock
+
     yi "Dating? Did I hear that right?!"
     
     "I throw a sock at Yin, which is about as effective as throwing a baseball at a butterfly."
     
     p "You heard what I said!"
+    
+    hide yin
+    hide yang
+    with char
     
     jump message_menu3
     
