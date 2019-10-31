@@ -361,7 +361,7 @@ label greg1_marlboros2:
 
     hide yin 
     hide yang 
-    with moveoutbottom
+    with easeoutbottom
     show greg neutral
 
     g "Are you gonna give me my cancer sticks or not?"

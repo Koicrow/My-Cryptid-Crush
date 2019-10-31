@@ -77,7 +77,7 @@ label day1_water3:
     
     p "Get back under the counter, there are cameras in here!"
     
-    hide yin with moveoutbottom
+    hide yin with easeoutbottom
     
     "I shove Yin back out of sight, ignoring their squawk of complaint."
     

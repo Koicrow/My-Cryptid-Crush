@@ -1465,7 +1465,7 @@ label greg2_snow3:
 
     g "Yin, get back in the bag!"
     
-    hide yin with moveoutbottom
+    hide yin with easeoutbottom
 
     "Yin squeaks indignantly as Greg shoves them back inside."
     

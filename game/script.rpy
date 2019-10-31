@@ -25,6 +25,8 @@ define qf = Character(_('???'), color="#c59cff")
 define char = Dissolve(0.05)
 default stay = False
 
+define charfade = Dissolve(0.5)
+
 # Yin and Yang placements
 
 # Yin
@@ -931,9 +933,7 @@ label intro_run1:
     
     yi "Why am I here? Are you kidding? This is the most fun I've had since the police caught Greg tagging the water tower!"
     
-    show yin at slightleft
-    with move
-    
+    show yin at slightleft    
     show yang neutral 2 at slightright
     with char
     
@@ -1074,6 +1074,8 @@ label intro_who3:
     
 label intro_who4:
 
+    show holly shadow with char
+
     "A gaunt, winged figure steps out of the shadows, standing far taller than any human. It has two winding antlers and a sneering skull for a face."
     
     "I'm petrified. I know I sounded scared when I met Greg for the first time, but in comparison, that was like a trip to Make-A-Moose Workshop."
@@ -1086,6 +1088,8 @@ label intro_who4:
     
     play music "jersey-devil.ogg"
     
+    show holly laugh
+
     qh "Bwahahahaha!"
     
     "The creature doubles over in laughter."
@@ -1094,13 +1098,14 @@ label intro_who4:
     p "H-huh?!"
     
     if stay:
-        
         jump intro_stay1_5
-    
+
     jump intro_run1_5
     
 label intro_run1_5:
     
+    show frankie neutral at midright with charfade    
+
     "To add to my confusion, another creature appears right out of thin air, like a ghost."
     
     jump intro_holly2
@@ -1110,6 +1115,8 @@ label intro_stay1_5:
     scene bg cottage
     with fade
     
+    show frankie neutral at midright with charfade  
+
     "To add to my confusion, another creature appears right out of thin air, like a ghost. She flips a switch on the wall, and the lights turn back on."
     
     jump intro_holly2
@@ -1118,33 +1125,35 @@ label intro_holly2:
     
     qf "Come on, Holland, you scared the poor human half to death."
     
+    show holly neutral at midleft with ease
+
     h "Oh my gosh, I feel bad now! I swear I'm not going to eat you. I'm actually vegetarian."
-    
     p "Oh... okay... vegetarian..."
     
     "I collapse on the floor, put my head in my hands, and breathe deeply. My racing heart refuses to calm down."
     
     "Now that Holland is wearing a contrite epression, with her claw-like hands clasped together, she isn't half as scary. If I wasn't recovering from a near-death experience, I would almost call her endearing."
-     
+    
     qf "Hey, you. Are you alright?"
     
 menu:
 
-    "Just need a moment to recover.":
+    "Yes... Just need a moment to recover...":
         jump intro_recover1
 
     "Heh, you really got me good.":
         jump intro_recover2
     
-    "You can't just do that to people!":
+    "You scared me to death!":
         jump intro_recover3
             
 label intro_recover1:
     
     p "Yes, I'm fine... just need a moment to recover...{w=.5} waiting for my life to stop flashing before my eyes..."
-    
     h "Oh my gosh, I'm sorry!! I know I look scary, but I'm actually very nice, I promise! I didn't traumatize you, did I?"
-    
+
+    show frankie smirk
+
     qf "At this point, I wouldn't be surprised."
     
     jump intro_recover4
@@ -1153,6 +1162,8 @@ label intro_recover2:
     
     p "Heh, I'm fine. You really got me good."
     
+    show holly laugh
+
     h "I know, right? Finally, someone who appreciates a good prank."
     
     jump intro_recover4
@@ -1160,19 +1171,21 @@ label intro_recover2:
 label intro_recover3:
     
     p "You can't just do that to people! You scared me to death!"
-    
     h "Aw, I'm really sorry. I was just trying to make this meeting more exciting."
-    
     p "If this day gets any more exciting, I think I'm going to have a heart attack."
     
     jump intro_recover4
     
 label intro_recover4:
     
+    show frankie neutral
+    show holly annoyed
+
     h "I don't get it. Humans think I look terrifying. I don't look {i}that{/i} bad, right, Frankie?"
-    
     f "Don't sweat it, you look great. That top really suits you."
     
+    show holly neutral
+
     h "Aw, shucks, thanks!"
     
     play music "kangaroo.ogg" fadeout 1
@@ -1183,16 +1196,18 @@ label intro_recover4:
     
     "She's also a kangaroo. I know that sounds insulting, but I'm serious. She has the head and legs of a kangaroo, and otherwise the body of a human."
     
+    show frankie happy
+
     f "I'm Frankie. This prankster over here is Holland."
-    
     h "Call me Holly!"
     
+    show frankie neutral
+
     p "I'm [name]. Pleased to meet you, I guess."
     
     if stay:
-        
         jump intro_stay2
-       
+
     jump intro_run2
     
 label intro_run2:
@@ -1201,67 +1216,68 @@ label intro_run2:
     
     "I might have taken her up on the offer, if I wasn't interrupted by a fluttering sound from above. I look up to see Mothman perched in a tree like an oversized bird."
     
-    show moth mix
+    show holly at left
+    show frankie at center
+    show moth mix at right
     with char
     
     m "Um, actually, Batu wants me to bring the human back to the cabin as soon as possible. Sorry."
-    
     p "{i}Sigh.{/i} All that running for nothing."
     
-    show moth at right
-    with move
+    show frankie happy
     
     f "Mothman, dude, it's been forever. How've you been?"
     
     show moth neutral
     
     m "Oh, you know, same old, same old."
-    
+
+    show frankie neutral
+
     f "Is your garden doing well?"
-    
     m "Oh yes, the carrots are just coming in!"
     
+    show frankie smirk
+
     f "That's awesome. I hate carrots, but I'm happy for you."
     
+    show frankie neutral
     show moth mix
     
     m "Let's head back. I don't want to keep Batu waiting..."
-    
-    hide moth
-    with char
     
     "I briefly consider making another run for it, but I can feel Mothman's eyes trained on me. I have a feeling I've lost my chance of escape for good."
     
     "We walk through the forest as a group. The cryptids chatter the entire way."
     
-    h "...So they call me the \"Jersey Devil,\" which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
+    show holly annoyed
     
+    h "...So they call me the Jersey Devil, which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
     h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
     
+    show holly neutral
+
     f "What do you expect when you keep letting people see you?"
-    
     h "Well, easy for {i}you{/i} to say. Not everyone can turn invisible at will, Ms. Phantom Kangaroo."
-    
     p "Oh, oh, oh! I know about phantom kangaroos! The 1978 Wisconsin sightings... That must have been you!"
     
+    show frankie smirk
+
     f "Sorry to disappoint, but I think that was someone's pet wallaby."
-    
     p "Oh."
-    
+
+    show frankie neutral
+        
     h "But she HAS been spotted before. Not to mention her big old kangaroo prints that she leaves everywhere!"
-    
     f "Well excuse me for using my feet to walk."
     
     scene bg lake
     with fade
+
+    show batu angry with char
     
     "The cabin draws near, with a very exasperated Batu at the doorway."
-    
-    show batu irritated
-    with char
-    
     w "Holland, Frankie. Glad you could make it. [name], I hope you got that out of your system."
-    
     p "Ah, yes, I think so."
     
     show batu neutral
@@ -1273,65 +1289,85 @@ label intro_run2:
     
     "This time, I put up no protest as Mothman sits me down on an armchair and ties my ankle to a chair leg. Greg has on an insufferable grin."
     
+    show greg smirk with char
+
     g "Welcome back, [name]. Had a nice run?"
-    
     p "Yeah, I think that about covered my exercise for the next lifetime or so."
     
+    show greg neutral
+
     g "Funny thing is, we were going to let you go anyway."
     
     jump intro_meeting
     
 label intro_stay2:
     
-    h "Oh, I didn't even finish introducing myself! They call me the \"Jersey Devil,\" which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
+    h "Oh, I didn't even finish introducing myself! They call me the Jersey Devil."
     
-    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
-    
+    show holly annoyed
+
+    h "Which is just a silly name, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
+    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."  
     f "What do you expect when you keep letting people see you?"
     
+    show holly neutral
+
     h "Well, easy for {i}you{/i} to say. Not everyone can turn invisible at will, Ms. Phantom Kangaroo."
-    
     p "Oh, oh, oh! I know about phantom kangaroos! The 1978 Wisconsin sightings... That must have been you!"
     
+    show frankie smirk
+
     f "Sorry to disappoint, but I think that was someone's pet wallaby."
-    
     p "Oh."
     
-    h "But she HAS been spotted before. Not to mention her big old kangaroo prints that she leaves everywhere!"
-    
+    show frankie neutral
+
+    h "But she HAS been spotted before. Not to mention her big old kangaroo prints that she leaves everywhere!"  
     f "Well excuse me for using my feet to walk."
-    
     h "[name], let me make it up to you for spooking you! Can I buy you a drink?{w=.5} Do you drink? Coffee is fine, too, if you'd rather."
     
     "I might have taken her up on the offer, if I wasn't interrupted by the sound of footsteps – and slithering – descending the stairs. Batu, Mothman, and Greg appear once more."
     
+    hide holly
+    hide frankie
     show batu neutral
     with char
     
     w "I'm afraid your date will have to wait. Frankie, Holland, glad you could make it."
     
-    hide batu
+    show batu right
+    show holly neutral left
     with char
     
     h "Batu! Wouldn't miss it for the world!!"
-    
-    f "Mothman, dude, it's been forever. How've you been?"
-    
-    show moth neutral at right
+
+    hide batu
+    hide holly
+    show frankie happy midleft
+    show moth mix midright
     with char
-    
+
+    f "Mothman, dude, it's been forever. How've you been?"
     m "Oh, you know, same old, same old."
     
+    show frankie neutral
+
     f "Is your garden doing well?"
     
+    show moth neutral
+
     m "Oh yes, the carrots are just coming in!"
     
+    show frankie smirk
+
     f "That's awesome. I hate carrots, but I'm happy for you."
     
-    "Greg saunters over and claps me on the back."
-    
     hide moth
+    hide frankie
+    show greg smirk
     with char
+
+    "Greg saunters over and claps me on the back."
     
     g "Good news, human! We decided to let you go!"
     
@@ -1341,31 +1377,25 @@ label intro_meeting:
     
     p "Huh? Really?!"
     
-    show batu content
+    show greg neutral at left
+    show batu content at right
     with char
     
     w "Yes, we made a decision. We can't spare the resources to confine you to the cabin for an extended period of time. So instead, we're going to keep an eye on you from afar."
-    
     p "How? Through cryptid magic?"
     
     show batu happy
     
     w "Yin and Yang will keep watch over you."
     
-    hide batu
-    with char
-    
-    show yin shock
+    show yin shock at left
     with char
     
     yi "Hell yeah! We get to stay with the human!"
     
-    hide yin
-    with char
-    
 menu:
 
-    "Do I really have to deal with these guys all the time?":
+    "Do I really have to deal with these two all the time?":
         jump intro_deal1
 
     "Phew, guess I'm getting off easy.":
@@ -1373,18 +1403,16 @@ menu:
     
 label intro_deal1:
     
-    p "Do I really have to deal with these guys {i}all the time{/i}?"
+    hide yin with char
+
+    p "Do I really have to deal with these two {i}all the time{/i}?"
     
-    show greg neutral
-    with char
+    show greg annoyed
     
     g "Now you know how I feel 24/7."
     
-    hide greg
-    with char
-    
+    show greg neutral
     show batu angry
-    with char
     
     w "Quiet, human. The alternative was to tie you up and throw you into the lake."
     
@@ -1394,8 +1422,7 @@ label intro_deal2:
     
     p "Phew, guess I'm getting off easy after all."
     
-    show batu neutral
-    with char
+    show batu neutral with char
     
     w "That's right. The alternative was to tie you up and throw you into the lake."
     
@@ -1403,12 +1430,7 @@ label intro_deal2:
     
 label intro_deal3:
     
-    show batu at right
-    with move
-    
-    show moth startled at left with char:
-        
-        xalign -0.405
+    show moth startled at slightleft behind batu, greg with char:
     
     m "Oh, no! We wouldn't really do that, would we?"
     
@@ -1416,23 +1438,21 @@ label intro_deal3:
     
     "Batu closes his eyes and takes a deep breath."
     
+    show batu neutral
+
     w "No, Mothman, we wouldn't. But the human didn't know that."
     
-    show moth mix at left
+    show moth mix 
     
     m "Oh.{w=.5} Sorry."
     
     "I snicker, despite the situation I'm in."
     
-    hide moth
-    with char
-    
-    show batu neutral at center
-    with move
-    
     w "Anway, now that we're all here, let's begin our meeting properly. And thirty minutes late, too. Chop chop, cryptids."
     
     hide batu
+    hide greg
+    hide moth
     with char
     
     "The five cryptids move over to the kitchen and sit around a circular table. Mothman puts out five cups of tea. He hurries over to offer me one as well, but I politely refuse."
@@ -1449,36 +1469,40 @@ label intro_deal3:
     
     "Anyway, by the time the meeting adjourns, the light of dawn is starting to dribble through the windows. Despite the earlier rush of adrenaline, my head is drooping hard."
     
-    "Mothman comes to untie me, then hands me a plastic bag full of cookies."
+    show moth mix with char
     
-    show moth neutral
-    with char
+    "Mothman comes to untie me, then hands me a plastic bag full of cookies."
     
     m "Here's something for the way home. If you want, that is. They're homemade!"
     
-    "I take it reverently. Homemade cookies made by a cryptid? [i]Hell[/i] yes. Plus, they're chocolate chip."
+    "I take it reverently. Homemade cookies made by a cryptid? It's like a dream come true. Plus, they're chocolate chip."
     
     p "Thank you so much."
     
-    show moth mix
+    show moth neutral
     
     m "You're welcome. :)"
     
     hide moth
+    show greg neutral at left
+    show batu neutral at right
     with char
     
     w "You'll take the human back, right, Greg?"
     
+    show greg annoyed
+
     g "Yeah, yeah. I'm already the messenger boy, I might as well do deliveries too."
-    
     w "Good. Then let's hurry. We shouldn't be out and about in the daytime."
     
     scene bg lakeday
     with fade
     
-    play music "forest_morning.ogg" fadeout 1
+    play music "forest_morning.ogg" fadeout 1 fadein 1
 
-    "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
+    "One by one, we filter out the door. Looks like the sun rose during the meeting."
+    
+    "There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
     
     p "Um, everyone, I have something I want to say."
     
@@ -1498,8 +1522,14 @@ label intro_bye1:
     
     p "I believed in you my entire life. It's crazy to finally meet you face to face. So,{w=.5} I guess, thank you for existing. "
     
+    show frankie happy at midright
+    show holly neutral at midleft
+    with char
+
     f "Heh, you're not too bad for a human, dude."
     
+    show frankie laugh
+
     h "That's so sweet! Hope I can see you again sometime, [name]!!"
     
     jump intro_bye3
@@ -1507,73 +1537,87 @@ label intro_bye1:
 label intro_bye2:
     
     p "I guess I just want to say goodbye."
-    
     p "This has been the strangest experience of my life. It's weird to think that everything is going to go back to normal after this. "
     
+    show frankie smirk at midright
+    show holly neutral at midleft
+    with char
+
     f "Heh, it's been weird for us too, dude."
-    
     h "Maybe we'll get to see you again sometime, [name]!"
     
     jump intro_bye3
     
 label intro_bye3:
     
+    hide frankie
+    hide holly
+    show batu angry
+    with char
+
     w "Hmph. If all goes well, we won't be seeing {i}any{/i} human again."
     
-    "The cryptids all say farewell before disappearing into the forest. Frankie nudges my shoulder as she passes and hands me a piece of paper. She makes a \"call me\" motion, winks, then disappears into the forest."
+    hide batu with char
+
+    "The cryptids all say farewell before disappearing into the forest. I take one last look at all of them, trying to ingrain them into my head. Greg. Batu. Mothman. Holland. Frankie."
+    
+    show frankie smirk with char
+
+    "Someone taps my shoulder. Frankie hands me a piece of paper, winks, and makes a \"call me\" motion."
+    
+    hide frankie with charfade
+
+    "Before I can come up with a response, she disappears into thin air."
     
     "I glance down at the paper, confused. At the top, it says {i}Cryptid Coalition, Fishtrap Chapter{/i}. Below is the names of all five cryptids, with a phone number beside each of them."
     
     "I can't believe it. A cryptid just gave me her number."
     
+    show greg annoyed with char
+
     g "Come on, poop-legs, we don't have all day!"
-    
     p "I'm coming!"
     
     scene bg forestday
+    show greg neutral
     with fade
     
     "I pocket the paper and hurry to Greg's side. We walk silently for a bit, leaves crunching underfoot. The flashlight is unnecesssary, as the sun is up, casting long shadows through the forest."
     
     p "Oh, man. I just remembered."
-    
     g "What?"
-    
     p "Bea is going to be worried {i}sick{/i}."
     
     "I check my phone again, and I see five frantic text messages at least a dozen missed calls. Knowing Bea, she's probably registered me as a missing person already."
     
     p "{i}Sigh.{/i} Forget Mongolian death worms, Bea's the one who's going to eat me alive.."
     
+    show greg smirk
+
     g "Heh. Sucks to be you."
-    
     p "You know, would it really hurt if I told one person? Bea is trustworthy, she'll—"
     
+    show greg upset
+
     g "Don't even think about it. I'm already in enough trouble."
     
-    show yin annoyed
+    show yin annoyed at midleft
+    show greg neutral
     with char
     
     yi "If you tell someone, we'll bite you!"
     
-    show yin at slightleft
-    with move
-    
-    show yang annoyed at slightright
-    with char
+    show yang annoyed at midright with char
     
     ya "No we won't, Yin."
     
     show yin shock
-    with char
     
     yi "Yes we wiiiill~!"
     
     show yang neutral
-    with char
     
     ya "We won't bite you, [name], but we'll tell Batu, and then you'll {i}wish{/i} you'd gotten away with just a bite."
-    
     p "Okay, okay, geez. I guess I'll have to think of a lie."
     
     hide yin
@@ -1596,8 +1640,9 @@ label intro_poop_legs1:
     
     p "Are you really going to keep calling me that?"
     
+    show greg smirk
+
     g "Yeah, why not? You falling down that hill was the funniest thing I've seen all day."
-    
     p "Ugh, of all the things to be remembered for..."
     
     jump intro_poop_legs3
@@ -1606,30 +1651,30 @@ label intro_poop_legs2:
     
     p "We sure are, rock-head."
     
+    show greg smirk
+
     g "Nice to meet you, human... face."
-    
     p "That one doesn't even make sense."
     
+    show greg annoyed
+
     g "Whatever."
     
     jump intro_poop_legs3
     
 label intro_poop_legs3:
     
+    hide greg with char
+    
     "I stare apprehensively up the slope, which is covered in tangled undergrowth and probably more deer poop."
     
-    p "Are we just doing this the hard way, then? There has to be another way around that doesn't –{nw}"
-    with hpunch
-    extend " HEY!"
-    
-    "Without warning, Greg picks me up by my armpits, and then we're flying through the air."
+    p "Are we just doing this the hard way, then? There has to be another way around that doesn't – HEY!"
+
+    "Without warning, Greg picks me up by my armpits, and then we're flying through the air." with hpunch
     
     p "Whoa, whoa, WHOA, what are you doing?!"
-    
     g "Hold still, would you? You're heavy enough without you flailing around like that."
-    
     p "GREG! LET ME DOWN!!"
-    
     g "I will, in a second! Jeez!"
     
     scene bg cemeteryday
@@ -1637,22 +1682,27 @@ label intro_poop_legs3:
     
     "He's unexpectedly strong, for such a scrawny guy. We arrive at the cemetery, and Greg drops me on the other side of the fence. I pick myself up and dust myself off."
     
+    show greg neutral with char
+
     p "Listen, buddy, you gotta warn someone before you just lift them into the air like that!"
-    
     g "My bad, my bad. Listen, I'd love to stay and chat, but I'm tired as hell and I think I can hear my rooftop calling me. Take care of Yin and Yang, alright?"
+    p "Alright. Will do."
     
-    p "Alright, I will."
-    
-    show yin shock
-    with char
+    show yin shock at midleft with char
     
     yi "Take care of us? We're the ones who's taking care of them!"
-    
+
+    show greg annoyed
+
     g "Yeah, yeah, whatever. See you next time."
     
+    hide yin with char
+
     p "There going to be a next time, then?"
     
-    "Greg calls back to me as he flies through the sky."
+    hide greg with char
+    
+    "Greg leaps into the sky, then calls back to me."
     
     g "We'll see!"
     

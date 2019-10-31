@@ -390,7 +390,7 @@ label greg3_carry4:
     
     show yin shock at slightleft
     show yang neutral 2 at slightright
-    with moveinbottom
+    with easeinbottom
 
     "Yin and Yang zip through the air beside me."
     
@@ -399,7 +399,7 @@ label greg3_carry4:
     
     hide yin
     hide yang
-    with moveouttop
+    with easeouttop
 
     "Seeing the streets shrink below me is more exhilarating than any rollercoaster I've been on. Let me tell you, these skyscrapers are {i}way{/i} taller than they seem on the inside. Thankfully, Greg's grip feels secure."
     
@@ -727,7 +727,7 @@ label greg3_passerby3:
     
     "I duck into an alleyway where hopefully no one will see me. My heart is beating like crazy. Shouldn't Greg have briefed me on this?!"
     
-    show greg shock with moveinleft
+    show greg shock with easeinleft
 
     "Soon, Greg dashes into the alleyway after me, clutching his bag in one hand. Yin and Yang fly behind him."
     
