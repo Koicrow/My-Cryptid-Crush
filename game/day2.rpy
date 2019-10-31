@@ -18,7 +18,7 @@ label day_2:
     
     scene bg dorm
     with fade
-    
+
     b "Oh my god, [name], are you seeing this?"
     
     "Bea angles her phone screen toward me. I lean across her bed in order to read it."
@@ -178,6 +178,8 @@ label day2_tension3:
     
     scene bg campus
     with fade
+
+    play music "park.ogg" fadein 1
     
     "I allow myself a tiny sigh of relief. Lying to Bea is more stressful than I thought it would be."
     

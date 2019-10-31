@@ -124,12 +124,14 @@ label greg3_invite4:
     
     scene bg city1
     with fade
+
+    play music "city.ogg" fadein 1
     
     "Before long, I'm dressed nice and cozy and biking my way into the city. It's a crisp, clear night, just overflowing with stars, like the sky is showing off."
     
     "Even at midnight, the city is active. Even on the outskirts of the city, I pass about five taxis, a dozen drunk people, and one very persistent phone case vendor."
     
-    "Eventually, I coast to a stop, my tires gently bumping over the cracks in the sidewalk. I look down at my navigation app, then around at the deserted street, then straight up at the top of the skyscrapers."
+    "Eventually, I coast to a stop, my tires gently bumping over the cracks in the sidewalk. I look down at my navigation app, then around at the deserted street."
     
     p "There's no way this is the right place."
     
@@ -1110,6 +1112,8 @@ label greg3_home4:
     scene bg city1
     with fade
 
+    play music "city.ogg" fadeout 1 fadein 1
+
     "Greg takes me back to my bike, and we say a quick goodbye before he flies back up to his rooftop roost. Fighting back yawns, I start the long trip back home."
     
     "Yin and Yang must be sleepy too, because they don't make any quips on the way home. Or maybe they fell asleep in my bag. Either way, I appreciate the silence to work through my thoughts."
@@ -1119,7 +1123,7 @@ label greg3_home4:
     scene bg suburbannight
     with fade
     
-    play music "forest_night.ogg" fadeout 1
+    play music "forest_night.ogg" fadeout 1 fadein 1
 
     "As I round the bend to my apartment building, I wonder what I am to the cryptids. A liability, for knowing their secret? Just an onlooker? A friend? Or could I be something more?"
     

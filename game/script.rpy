@@ -887,10 +887,10 @@ label intro_run1:
     "I turn around and sprint out the door."
     
     scene bg lake
+    show batu mouth 
     with fade
-    
-    show batu mouth with char
-    play music "creepy_loop.ogg"
+
+    play music "forest_night.ogg"
     
     w "Get back here, human!" with hpunch
     
@@ -910,17 +910,9 @@ label intro_run1:
 
     "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth, right?!"
     
-    "I run for what seems like hours but was probably minutes. My lungs burn, but I don't dare stop. Now that I have a picture of them, they'll be out for my blood."
-    
-    stop music fadeout 1
+    "I run for what seems like hours but was probably minutes. My lungs burn, but I don't dare stop."
 
-    "Eventually, my legs threaten to give out, and I have to squat down. I take a few gasps, then listen carefully."
-    
-    play music "forest_night.ogg" fadein 1
-    
-    "Nothing but the sound of cicadas."
-    
-    "I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
+    "Eventually, my legs threaten to give out, and I have to stop. I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
     
     show yin neutral
     with char
@@ -950,6 +942,8 @@ label intro_run1:
     hide yin
     hide yang
     with char
+    
+    play music "creepy_loop.ogg"
     
     qh "Well, well, well. What's a tasty morsel like you doing wandering the forest?"
     
@@ -1023,13 +1017,13 @@ label intro_stay1:
 
     "Suddenly, the lights in the cabin turn off, making the room almost pitch black. I hear a low chuckle nearby."
     
+    play music "creepy_loop.ogg"
+    
     qh "Well, well, well. What's a tasty morsel like you doing all tied up?"
     
     jump intro_holly1
     
 label intro_holly1:
-    
-    play music "creepy_loop.ogg"
 
     "The voice is like the sound of snapping branches. I freeze for a second, then jump to my feet and fumble for the flashlight that's still in my back pocket."
     
@@ -1086,11 +1080,11 @@ label intro_who4:
     
     qh "Pfft..."
     
-    play music "jersey-devil.ogg"
-    
     show holly laugh
 
     qh "Bwahahahaha!"
+    
+    play music "jersey-devil.ogg"
     
     "The creature doubles over in laughter."
     

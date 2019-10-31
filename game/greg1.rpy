@@ -231,7 +231,7 @@ label greg1_message6:
     "The stranger pulls out something that looks like a dog biscuit, if dog biscuits were purple. Then he lifts his sunglasses and speaks in a familiar voice."
     
     show greg smirk
-    play music "greg.ogg" fadeout 1
+    play music "greg.ogg"
 
     g "Hey, have you seen any imps around here?"
     

@@ -35,7 +35,7 @@ menu:
     "Sounds great":
         jump greg2_great1
 
-    "I might be able to fit u into my schedule":
+    "I might be able to fit you into my schedule":
         jump greg2_great2
    
 label greg2_great1:
@@ -1425,7 +1425,7 @@ label greg2_noodles4:
     scene bg mallex
     with fade
     
-    stop music fadeout 1
+    play music "city.ogg" fadeout 1 fadein 1
 
     "I brace myself against the wave of cold as I go through the door. Then I look up at the sky."
     
@@ -1446,10 +1446,10 @@ label greg2_noodles4:
         
         jump greg2_snow3
         
-    p "Sun finally came out."
-    g "Sure did."
+    p "It's a sunshower."
+    g "Sure is."
 
-    "Little rays of sunlight filter through the clouds, casting dappled light onto the parking lot. It's very pretty, if you're the kind of person who's into that."
+    "It's drizzling lightly outside, but the sunlight continues to filter through the clouds, casting dappled light onto the parking lot. It's very pretty, if you're the kind of person who's into that."
     
 label greg2_snow3:
     
