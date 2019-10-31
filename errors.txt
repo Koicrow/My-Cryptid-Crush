@@ -2,85 +2,172 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 874: expected statement.
+File "game/greg2.rpy", line 1031: expected statement.
 (Perhaps you left out a " at the end of the first line.)
-    "I open the camera, subtlely angle the phone upward, and take a picture with all three cryptids in the frame. However, because I'm an idiot, I forgot to turn off the camera's sound.
+    "{i}BEEP.
+        with vpunch
+        extend " BEEP.{nw}"
+                       ^
+        with vpunch
+        extend " BEEP.{/i}"
+        with vpunch
         
-        stop music
-        play sound "camera.ogg"
-                             ^
+        "I freeze as the detector gate thingy goes off. I only have a split second to make a decision."
         
-        "{i}Click!{/i}"
+        menu:
+            
+            "Run, or stay and apologize?"
         
-        "For a second, there's a silence in the cabin."
-        
-        p "I'm-really-sorry-bye!"
-        
-        "I turn around and sprint out the door."
-        
-        scene bg lake
-        with fade
-        
-        show batu mouth with char
-        
-        w "Get back here, human!" with hpunch
-        
-        show batu angry
-        
-        w "Mothman—"
-        m "On it!"
-        
-        hide batu
-        show moth startled
-        with char
-        
-        "I glance over my shoulder to see Mothman burst out of the cabin, his impressive wingspan blotting out the stars. Breathing hard, I duck into the treeline. "
-        
-        scene bg forest
-        with fade
-        
-        play music "forest_night.ogg" fadeout 1
+            "(Run)":
+                jump greg2_steal2
     
-        "I can't remember which way I came from, so I just choose a direction and stick to it, tree trunks zooming past in the dark. Mothman won't be able to fly through the undergrowth, right?"
+            "(Stay)":
+                jump greg2_steal2
+            
+    label greg2_steal2:
         
-        "I run for what seems like hours but was probably minutes, then squat down, gasping. I put one hand against a tree trunk as the world sways around me. I haven't gotten this much exercise since the time Bea dragged me to a Zumba workshop."
+        p "We should—"
         
-        show yin neutral
-        with char
+        show greg shock with char
+        play music "jersey-devil.ogg" fadeout 1
+    
+        "Before I can continue, Greg makes the decision for me by grabbing my wrist and pulling me into the corridor."
         
-        yi "Good work, kid, I think you lost him!"
+        p "Whoa!"
+        g "Come on, it's crowded as hell! No one's going to be able to follow us!"
         
-        p "Yin? {i}gasp{/i}...{w=.5} What are you... {i}gasp{/i}...{w=.5} doing here?"
+        scene bg mall
+        with fade
+    
+        "I fall into step beside Greg, my heart pounding. It takes all my focus to not run into potted plants, so I can't check to see if we're being chased in the first place. I think I hear Yin cheering us on."
         
-        show yin shock
+        "Eventually, Greg and I duck into a family bathroom and lock the door behind us. I bend over, panting. Greg lets out a crow of excitement."
         
-        yi "Why am I here? Are you kidding? This is the most fun I've had since the police caught Greg tagging the water tower!"
+        show greg smirk with char
         
-        show yin at slightleft
-        with move
+        g "Woo! That was great!"
+        
+        show greg neutral
+        show yin shock at midleft with char
+    
+        yi "Hard agree!"
+        p "So you took the time to block the camera, but you didn't have a plan for the detector gate thingy??"
+        
+        hide yin with char
+        show greg smirk
+    
+        g "I did have a plan. Run like hell."
+        "Greg smirks at me. Instead of deigning him with a response, I sit down on the closed toilet with a huff."
+        
+        show greg neutral
+    
+        p "Man, this comic book better be freaking worth it."
+        
+        show yang close at midright with char
+    
+        ya "Tisk, tisk. You should have listened to me."
+        
+        show greg annoyed
+    
+        g "Oh, can it, Yang. We got away, didn't we?"
+        
+        hide yang with char
+        show greg neutral
+    
+        "After we catch our breath, Greg and I peek out of the bathroom. There are no alarms or mall cops or anything out of place, except a couple of old people giving us judgemental stares for going into the bathroom together. Flushing at the implication, I grab my bag and hurry outside."
+        
+        p "Why don't we do something a little more relaxing?"
+        g "Sure, sure."
+        p "Still no preference?"
+    
+        show greg smirk
+    
+        g "Nah, I've had my kicks."
+        
+        jump greg2_main1
+        
+    label greg2_steal3:
+        
+        p "I'm just going to put it back."
+        
+        show yin annoyed
+    
+        yi "{i}Pbbbbbt.{/i} Boring."
+        
+        show yang close
+    
+        ya "You're making the right decision, dear."
+        p "I just wouldn't feel right stealing from this place, you know? It was my whole freaking childhood. And the shopkeeper doesn't deserve that."
+    
+        show greg annoyed
+        
+        g "Ah, whatever. Guess you have a point."
+        
+        scene bg mall
+        show greg neutral
+        with fade
+    
+        "We spend a few more minutes browsing the comic books, but eventually leave empty-handed."
+        
+        g "Where to next?"
+        
+        jump greg2_main1
+        
+    label greg2_leave1:
+    
+        p "I'm getting kind of tired. Do you want to head home?"
+        
+        show greg neutral
+    
+        g "Sounds alright to me, as long as we stop by the food court. I'm starving."
+        
+        show yang close at midright with char
+    
+        ya "Like usual."
+        
+        show greg smirk
+    
+        g "Hey, it takes a lot of food to maintain a body like this!"
+        "He locks his fingers together and stretches his scrawny arms in front of him. I snort in disbelief."
+        p "Come on, let's go."
+        
+        scene bg foodcourt
+        show greg neutral
+        with fade
+        
+        if renpy.music.get_playing(channel='music') != "mothman.ogg":
+            play music "mothman.ogg" fadeout 1
+    
+        "Before long, I step over a discarded, mustard-stained napkin that's a sure sign of our destination."
+        
+        p "Oh, man. Lots of fond memories of eating here as a kid. Hamburger Queen, always Hamburger Queen."
+        g "I'm more of a Panda Central guy myself. You know, I didn't have fast food until I was sixteen."
+        p "No. That's cruel and unusual."
+        
+        show greg smirk
+    
+        g "Tell me about it! When I moved into civilization for the first time, I had pizza and Chinese takeout every day for a year."
+        
+        show greg annoyed
+    
+        g "Come to think of it, that's probably why I developed heartburn."
+        p "Yeah, that'll do it."
+        
+        hide greg with char
+    
+        "Greg wanders off to get his cheap Chinese food, while I consider my options. I ate with Bea earlier, so I'm not super hungry. Maybe I could buy both of us drinks?"
+        
+        p "Pssst. Yin, Yang. What does Greg like to drink?"
         
         show yang neutral 2 at slightright
-        with char
+    
+        ya "Cherry soda."
         
-        ya "We're here because Greg asked us to keep an eye on you."
-        
-        p "Well, you can... {i}gasp{/i}...{w=.5} go back now, because I'm... {i}gasp{/i}...{w=.5} doing completely fine on my own, thank you very much."
-        
-        "I make a halfhearted shooing motion at them. Then I hear a low chuckle from nearby."
-        
-        hide yin
-        hide yang
-        with char
-        
-        qh "Well, well, well. What's a tasty morsel like you doing wandering the forest?"
-        
-        jump intro_holly1
-        
-    label intro_stay1:
-        
-        $ stay = True
-        
-        "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of someone called a \"death worm\" strikes me as a bad idea."
+        show yang at slightright with char
+        show yin shock at slightleft with char
+    
+        yi "Iced coffee!"
+        p "Is this a \"one tells the truth, the other tells only lies\" situation?"
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Oct 31 00:07:06 2019
+Thu Oct 31 03:48:05 2019

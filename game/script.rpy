@@ -97,11 +97,11 @@ label start:
     
     p "Shh! Not so loud!"
     
-    b "But what if someone notices us?"
+    b "But what if someone catches us?!"
     
     p "It's pitch black,{w=.5} no one's going to notice unless you keep yapping!"
     
-    "I flick on my flashlight and shine it around. It really is dark here, the stars covered up by looming clouds. I briefly illuminate the sign that reads: FISHTRAP CEMETERY, FISHTRAP, WISCONSIN."
+    "I flick on my flashlight and shine it around. It really is dark here, the stars covered up by looming clouds. I briefly illuminate a sign that reads {i}FISHTRAP CEMETERY, FISHTRAP, WISCONSIN{/i}."
     
     b "Besides, even if Mothman was here, wouldn't he have left by now?"
     
@@ -109,7 +109,7 @@ label start:
     
     p "Honestly, why do I even bring you along?"
     
-    b "I'm wondering the same thing. I could be in bed right now, watching TV shows."
+    b "I'm wondering the same thing. I could be in bed right now, watching K dramas."
     
     b "Oh, my poor, poor pillow...{w=.5} How I miss you..."
     
@@ -187,7 +187,7 @@ label intro_feather3:
     
     p "Pfft, don't be ridiculous. There's no murderers in Fishtrap."
     
-    "Something scurries through the leaves right next to me, and I let out the tiniest yelp."
+    "Something scurries through the leaves right next to me, and I let out a tiny yelp."
     
     b "What? What is it?"
     
@@ -218,14 +218,14 @@ label intro_feather3:
 
     "Is it a serial killer? A wild animal?"
     
-    "Or coudl it be what I was looking for all along?"
+    "Or could it be what I was looking for all along?"
     
     "I pat the ground beside me until I feel the flashlight. Trembling, I lift the beam to illuminate the figure, and see..."
     
     play music "greg.ogg"
     show greg upset with char
     
-    qg "Hey! Are you trying to blind me or something?"
+    qg "Hey! Are you trying to blind me or something?" with hpunch
     
     p "Huh?"
     
@@ -312,7 +312,9 @@ label intro_figure4:
 
     show greg worried
 
-    qg "Bigfoot's toe, Batu is going to {i}kill{/i} me. I wasn't supposed to be seen anywhere near humans. But how am I supposed to account for them raining down on top of my head?!"
+    qg "Bigfoot's toe, Batu is going to {i}kill{/i} me. I wasn't supposed to be seen anywhere near humans."
+    
+    qg "But how am I supposed to account for them raining down on top of my head?!"
     
     "Distantly, I hear Bea yelling."
     
@@ -334,7 +336,7 @@ label intro_figure4:
 
     g "Come with me. Maybe Batu will know what to do with you."
     
-    "He starts pulling me through the forest by the hand."
+    "He starts pulling me through the forest."
     
 menu:
 
@@ -345,10 +347,10 @@ menu:
         jump intro_hand2
 
 label intro_hand1:
-    
-    show greg neutral
 
     "Before he can take me anywhere, I break from his grip."
+    
+    show greg neutral
 
     p "Whoa, whoa, whoa! I'm pretty sure my dad warned me about following strangers through the woods."
 
@@ -384,7 +386,7 @@ label intro_hand3:
     
     hide greg with char
 
-    "Greg leaps over a rotting log, disappearing out of sight. I pull out my phone to shoot Bea a quick text message – {i}Be back soon, don't worry about me{/i} – then I hop over the log as well."
+    "Greg leaps over a rotting log, disappearing out of sight. I pull out my phone to shoot Bea a quick text message – {i}Be back soon, don't worry about me{/i} – then hop over the log as well."
     
     p "Hey! Wait up!"
     
@@ -403,8 +405,8 @@ label intro_hand3:
     qyi "Are you kidding? Look, kid, you're having the time of your life! Forget about your stinky human friend!"
     
     show greg annoyed
-    show yang neutral 2 at midright 
-    show yin neutral at midleft 
+    show yang at midright 
+    show yin at midleft 
     with char
     
     g "Ying, Yang, knock it off!"
@@ -421,10 +423,10 @@ menu:
         jump intro_yin_yang3
     
 label intro_yin_yang1:
-    
-    show greg neutral
 
     p "Bea is {i}not{/i} stinky."
+    
+    show greg neutral
     
     "The two monsters are no more than a few inches tall, one white, one black. The black one – Yin, I assume – pipes up again."
     
@@ -442,9 +444,9 @@ label intro_yin_yang1:
     
 label intro_yin_yang2:
     
-    show greg neutral
-    
     p "Greg seems alright to me."
+    
+    show greg neutral
     
     "The two monsters are no more than a few inches tall, one white, one black. The black one – Yin, I assume – pipes up again."
     
@@ -489,9 +491,8 @@ label intro_yin_yang3:
 label intro_yin_yang4:
     
     scene bg lake
+    show greg neutral
     with fade
-    
-    show greg neutral with char
 
     "Greg comes to a stop by a dilapidated cabin overlooking a little lake. And I mean {i}dilapidated{/i}. It looks so old that the last resident could have been Abraham Lincoln."
     
@@ -524,12 +525,12 @@ label intro_yin_yang4:
     
     "For a split second, I consider making a run for it. But how can you run from something like that? It could catch and eat me in an instant."
     
-    "Then it starts talking."
+    "Then it says..."
     
     show batu neutral
     play music "batu.ogg"
     
-    qw "Greg. Do you care to explain?"
+    qw "Greg! Do you care to explain?" with hpunch
     
     show batu at right    
     show greg neutral at left
@@ -543,7 +544,7 @@ label intro_yin_yang4:
     
     show batu irritated
     
-    qw "I meant the fact that you have a human."
+    qw "I meant the fact that you have a {i}human{/i}."
     
     show greg neutral
     
@@ -554,7 +555,7 @@ menu:
     "Holy fucking guacamole.":
         jump intro_met_batu3
 
-    "He doesn't {i}have{/i} me.":
+    "I wouldn't say he {i}has{/i} me.":
         jump intro_met_batu1
 
     "I like your hat!":
@@ -588,8 +589,9 @@ label intro_met_batu4:
     qw "Let's convene inside. You'd better have a good explanation for this."
     g "Of course, of course. There's a very logical explanation for all of this, I promise."
     
-    hide batu with char
+    hide batu 
     show greg at center
+    with char
     
     "The giant worm slithers into the cabin, passing right in front of me. He's even more impressive up close."
     
@@ -598,6 +600,9 @@ label intro_met_batu4:
     "Greg runs a hand through his hair, takes a deep breath, and follows him inside."
 
     g "Come on, poop-legs. Let's get this over with."
+
+    show yin shock at midleft with char
+
     yi "Ooooh, you've really kicked the imp's nest now."
     
     scene bg cottage
@@ -627,7 +632,9 @@ label intro_met_batu4:
     
     p "No, no, no, you don't understand! I'm your biggest fan!"
     
-    "He has the head of a moth, a wingspan that's probably wider than I'm tall, and a plume of fluff around his neck that looks like the softest scarf in the world. In short, he's everything I ever hoped for."
+    "He has the head of a moth, a wingspan that's probably wider than I'm tall, and a plume of fluff around his neck that looks like the softest scarf in the world."
+    
+    "In short... He's everything I ever hoped for."
     
     show moth neutral at midright
     show greg annoyed at midleft
@@ -642,8 +649,6 @@ label intro_met_batu4:
     show greg neutral
     
     g "I adopted you. You don't count."
-    
-    hide yang with char
 
     "You know that part of the story where the protagonist thinks \"I must be dreaming,\" even though they're obviously not dreaming?{w=.5} Well, I'm ashamed to say, this is that part."
     
@@ -651,6 +656,7 @@ label intro_met_batu4:
     
     "And he's {i}cute as hell.{/i}"
     
+    hide yang
     show moth at slightleft
     show greg at left
     show batu neutral at right
@@ -770,9 +776,10 @@ label intro_question4:
     
     "Batu sighs, squeezing his four eyes shut."
     
-    w "This is {i}exactly{/i} why we needed to have this meeting. Because of Mothman's recent incident, the area is going to be crawling with cryptid hunters. We have to be on high alert."
-    
     show batu neutral
+    
+    w "This is {i}exactly{/i} why we needed to have this meeting. Because of Mothman's recent incident, the area is going to be crawling with cryptid hunters. We have to be on high alert!"
+
     show moth mix
     
     m "Sorry..."
@@ -861,7 +868,9 @@ label intro_blab3:
     
     show batu neutral
 
-    "As I decline the call and mute my phone, I realize that if I want to escape, this might be my best shot. It sounds like I might end up tied to a radiator if I stick around, or worse. And there's no one standing between me and the door."
+    "As I decline the call and mute my phone, I realize that if I want to escape, this might be my best shot."
+    
+    "It sounds like I might end up tied to a radiator if I stick around, or worse. And there's no one standing between me and the door..."
     
 menu:
 
@@ -953,7 +962,7 @@ label intro_stay1:
     
     $ stay = True
     
-    "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of someone called a \"death worm\" strikes me as a bad idea."
+    "I obediently decline the call and put the phone back in my pocket. I don't know why, but getting on the bad side of something called a \"death worm\" strikes me as a bad idea."
     
     show batu neutral
 
@@ -978,7 +987,7 @@ label intro_stay1:
 
     "Batu lets out a rumbling sigh."
     
-    w "I meant to tie them up, Mothman."
+    w "I meant for you to tie them up, Mothman."
 
     show moth mix
 
@@ -1008,12 +1017,15 @@ label intro_stay1:
     
     show yin neutral
     
-    yi "Just keeping you company, kid!"    
+    yi "Just keeping you company, kid!"   
+
+    show yang close
+
     ya "Greg asked us to keep an eye on you."
     p "There's no need. I already decided to play along."
     
-    scene black
-    stop music
+    scene black with dissolve
+    stop music fadeout 1
 
     "Suddenly, the lights in the cabin turn off, making the room almost pitch black. I hear a low chuckle nearby."
     
@@ -1040,7 +1052,7 @@ menu:
         
 label intro_who1:
     
-    p "Who's there? I've already dealt with gargoyles and giant worms tonight! I'm not in the mood for any shenanigans!"
+    p "W-who's there? I've already dealt with gargoyles and giant worms tonight! I'm not in the mood for any shenanigans!"
     
     qh "Oh, don't worry. This will be over in less than a second..."
     
@@ -1107,11 +1119,14 @@ label intro_run1_5:
 label intro_stay1_5:
     
     scene bg cottage
-    with fade
+    show holly laugh
+    with dissolve
+
+    "Just as suddenly as they turned off, the lights turn on again."
     
     show frankie neutral at midright with charfade  
-
-    "To add to my confusion, another creature appears right out of thin air, like a ghost. She flips a switch on the wall, and the lights turn back on."
+    
+    "To add to my confusion, another creature appears right out of thin air, like a ghost."
     
     jump intro_holly2
     
@@ -1164,7 +1179,7 @@ label intro_recover2:
     
 label intro_recover3:
     
-    p "You can't just do that to people! You scared me to death!"
+    p "You scared me to death! You can't just do that to people!"
     h "Aw, I'm really sorry. I was just trying to make this meeting more exciting."
     p "If this day gets any more exciting, I think I'm going to have a heart attack."
     
@@ -1247,7 +1262,7 @@ label intro_run2:
     show holly annoyed
     
     h "...So they call me the Jersey Devil, which is just silly, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
-    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
+    h "None of them got the description right, either. Just so you know, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."
     
     show holly neutral
 
@@ -1266,10 +1281,9 @@ label intro_run2:
     f "Well excuse me for using my feet to walk."
     
     scene bg lake
+    show batu angry
     with fade
 
-    show batu angry with char
-    
     "The cabin draws near, with a very exasperated Batu at the doorway."
     w "Holland, Frankie. Glad you could make it. [name], I hope you got that out of your system."
     p "Ah, yes, I think so."
@@ -1301,7 +1315,7 @@ label intro_stay2:
     show holly annoyed
 
     h "Which is just a silly name, if you ask me. I go on a {i}tiny{/i} bender and maybe spook a {i}few{/i} partygoers, and suddenly HUNDREDS of people claim to have seen a devil."
-    h "None of them got the description right, either. By the way, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."  
+    h "None of them got the description right, either. Just so you know, \"blood-curdling scream\" is a {i}very{/i} rude way to describe someone's laugh."  
     f "What do you expect when you keep letting people see you?"
     
     show holly neutral
@@ -1320,7 +1334,7 @@ label intro_stay2:
     f "Well excuse me for using my feet to walk."
     h "[name], let me make it up to you for spooking you! Can I buy you a drink?{w=.5} Do you drink? Coffee is fine, too, if you'd rather."
     
-    "I might have taken her up on the offer, if I wasn't interrupted by the sound of footsteps – and slithering – descending the stairs. Batu, Mothman, and Greg appear once more."
+    "I might have taken her up on the offer, if I wasn't interrupted by the sound of footsteps – and slithering – descending the stairs."
     
     hide holly
     hide frankie
@@ -1329,16 +1343,16 @@ label intro_stay2:
     
     w "I'm afraid your date will have to wait. Frankie, Holland, glad you could make it."
     
-    show batu right
-    show holly neutral left
+    show batu at right
+    show holly neutral at left
     with char
     
     h "Batu! Wouldn't miss it for the world!!"
 
     hide batu
     hide holly
-    show frankie happy midleft
-    show moth mix midright
+    show frankie happy at midleft
+    show moth mix at midright
     with char
 
     f "Mothman, dude, it's been forever. How've you been?"
@@ -1396,11 +1410,10 @@ menu:
         jump intro_deal2
     
 label intro_deal1:
-    
-    hide yin with char
 
     p "Do I really have to deal with these two {i}all the time{/i}?"
     
+    hide yin with char
     show greg annoyed
     
     g "Now you know how I feel 24/7."
@@ -1416,7 +1429,9 @@ label intro_deal2:
     
     p "Phew, guess I'm getting off easy after all."
     
-    show batu neutral with char
+    hide yin
+    show batu neutral 
+    with char
     
     w "That's right. The alternative was to tie you up and throw you into the lake."
     
@@ -1455,9 +1470,9 @@ label intro_deal3:
     
     "They seem especially concerned about the upcoming Fishtrap Cryptid Festival. No wonder – it's the largest gathering of cryptozoologists on this side of the Mississippi."
     
-    "How do I know? My dad used to take me every year. A full four days of vendors hawking Nessie plushies, arguments about Bigfoot's muscle mass, and way more {i}Monster Mash{/i} than any one person should be subjected to. "
+    "How do I know? My dad and I go every year. A full four days of vendors hawking Nessie plushies, arguments about Bigfoot's muscle mass, and way more {i}Monster Mash{/i} than any one person should be subjected to. "
     
-    "I loved every minute of it. It was like second Christmas to me. But it's nothing compared to what's in front of me right now."
+    "I love every minute of it. It's like second Christmas to me. But it's nothing compared to what's in front of me right now."
     
     "It kinda sounds like a bad joke. A gargoyle, a Mongolian death worm, Mothman, the Jersey Devil, and a phantom kangaroo walk into a bar. \"Hey!\" says the bartender. \"Haven't I sighted you somewhere before?\""
     
@@ -1471,7 +1486,7 @@ label intro_deal3:
     
     "I take it reverently. Homemade cookies made by a cryptid? It's like a dream come true. Plus, they're chocolate chip."
     
-    p "Thank you so much."
+    p "Thank you... so much..."
     
     show moth neutral
     
@@ -1494,13 +1509,11 @@ label intro_deal3:
     
     play music "forest_morning.ogg" fadeout 1 fadein 1
 
-    "One by one, we filter out the door. Looks like the sun rose during the meeting."
-    
-    "There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
+    "One by one, we filter out the door. There's some idle chatter, but it looks like everyone is about to head separate ways. This might be the last chance I ever get to talk to a real cryptid."
     
     p "Um, everyone, I have something I want to say."
     
-    "All five cryptids turn to look at me, which is a very intimidating experience, by the way. I guess I'd better figure out what I want to say."
+    "All five cryptids turn to look at me, which is a very intimidating experience, by the way. I guess I'd better figure out what to say."
     
 menu:
 
@@ -1584,7 +1597,7 @@ label intro_bye3:
     
     "I check my phone again, and I see five frantic text messages at least a dozen missed calls. Knowing Bea, she's probably registered me as a missing person already."
     
-    p "{i}Sigh.{/i} Forget Mongolian death worms, Bea's the one who's going to eat me alive.."
+    p "{i}Sigh.{/i} Forget Mongolian death worms, Bea's the one who's going to eat me alive."
     
     show greg smirk
 
@@ -1593,7 +1606,7 @@ label intro_bye3:
     
     show greg upset
 
-    g "Don't even think about it. I'm already in enough trouble."
+    g "Don't even think about it. I'm already in enough trouble as is."
     
     show yin annoyed at midleft
     show greg neutral
@@ -1601,7 +1614,7 @@ label intro_bye3:
     
     yi "If you tell someone, we'll bite you!"
     
-    show yang annoyed at midright with char
+    show yang close at midright with char
     
     ya "No we won't, Yin."
     
@@ -1609,7 +1622,7 @@ label intro_bye3:
     
     yi "Yes we wiiiill~!"
     
-    show yang neutral
+    show yang annoyed
     
     ya "We won't bite you, [name], but we'll tell Batu, and then you'll {i}wish{/i} you'd gotten away with just a bite."
     p "Okay, okay, geez. I guess I'll have to think of a lie."
@@ -1674,13 +1687,13 @@ label intro_poop_legs3:
     scene bg cemeteryday
     with fade
     
-    "He's unexpectedly strong, for such a scrawny guy. We arrive at the cemetery, and Greg drops me on the other side of the fence. I pick myself up and dust myself off."
+    "He's unexpectedly strong, for such a scrawny guy. We arrive at the cemetery and Greg drops me on the other side of the fence. I pick myself up and dust myself off."
     
     show greg neutral with char
 
     p "Listen, buddy, you gotta warn someone before you just lift them into the air like that!"
-    g "My bad, my bad. Listen, I'd love to stay and chat, but I'm tired as hell and I think I can hear my rooftop calling me. Take care of Yin and Yang, alright?"
-    p "Alright. Will do."
+    g "My bad. Listen, I'd love to stay and chat, but I'm tired as hell and I think I can hear my rooftop calling me. Take care of Yin and Yang, alright?"
+    p "Alright, alright. Will do."
     
     show yin shock at midleft with char
     
@@ -1696,7 +1709,7 @@ label intro_poop_legs3:
     
     hide greg with char
     
-    "Greg leaps into the sky, then calls back to me."
+    "Greg leaps into the sky, then calls back to me from a distance."
     
     g "We'll see!"
     
@@ -1704,7 +1717,7 @@ label intro_poop_legs3:
     
     "Well, my memories, and a bag of cookies, and a slip of paper with five phone numbers on it."
     
-    "With a deep breath, I start the long trek back to my aparment. I take out my phone and dial Bea. Might as well get this over with."
+    "With a deep breath, I start the long trek back to my apartment. I take out my phone and dial Bea. Might as well get this over with."
     
     jump day_1
     

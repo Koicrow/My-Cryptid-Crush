@@ -60,10 +60,14 @@ label greg3_invite2:
     
     "Yang pipes up from behind me."
     
+    show yang neutral with char
+
     ya "What about us? Are we invited?"
     
     p "Okay, you've {i}got{/i} to stop reading over my shoulder!"
     
+    hide yin with char
+
     g "{size=+7}{font=Iceland-Regular.ttf}{i}Sure, why not?{/i}{/font}{/size}"
     
     g "{size=+7}{font=Iceland-Regular.ttf}{i}Do you wanna meet me at my place{/i}{/font}{/size}"
@@ -129,7 +133,7 @@ label greg3_invite4:
     
     "Before long, I'm dressed nice and cozy and biking my way into the city. It's a crisp, clear night, just overflowing with stars, like the sky is showing off."
     
-    "Even at midnight, the city is active. Even on the outskirts of the city, I pass about five taxis, a dozen drunk people, and one very persistent phone case vendor."
+    "Although it's midnight, the city is still active. Even on the outskirts of the city, I pass about five taxis, a dozen drunk people, and one very persistent phone case vendor."
     
     "Eventually, I coast to a stop, my tires gently bumping over the cracks in the sidewalk. I look down at my navigation app, then around at the deserted street."
     
@@ -204,15 +208,6 @@ label greg3_impressed3:
     
     show greg neutral
 
-    g "Yin, Yang, good to see ya."
-    
-    show yang neutral 2 at midright with char
-
-    ya "Hope you're keeping out of trouble."
-    g "Eh, no promises."
-    
-    hide yang with char
-
     p "So, are you ready to go?"
     g "Actually, I came up with a better idea."
     
@@ -221,14 +216,14 @@ label greg3_impressed3:
     show greg smirk
     
     g "Tagging."
-    p "Oh??"
+    p "Oh?!"
     
     show greg happy
 
     g "It'll be fun! We sneak around the city, tag a couple of walls, maybe throw up some other art. You in?"
     p "Sure, why not?"
     
-    show greg neutral
+    show greg smirk
 
     g "Sick."
     
@@ -385,8 +380,6 @@ label greg3_carry4:
     
     scene bg cityview
     with fade
-    
-    play music "mothman.ogg" fadeout 1
 
     "He lifts off with a powerful jump. I yelp as my feet leave the ground, then we're soaring up and up into an endless sky." with vpunch
     
@@ -443,9 +436,9 @@ label greg3_carry4:
 
     "Greg disappears through a flap in the fabric, and I poke my head inside."
     
-    "It's surprisingly spacious, complete with floor pillows and a collapsible drawing desk. One corner has a minifridge and a bunsen burner, their cords disappearing under the wall."
+    "It's surprisingly spacious. One corner has a minifridge and a bunsen burner, their cords disappearing under the wall. In another corner, clothes hang from a makeshift rack."
     
-    "In another corner, clothes hang from a makeshift rack. Fairy lights droop down from the ceiling. The whole thing looks thrown-together, but comfy."
+    "Fairy lights droop down from the ceiling, illuminating a set of floor pillows and a collapsible drawing desk. The whole thing looks thrown-together, but comfy."
     
     show greg neutral with char
 
@@ -461,8 +454,9 @@ label greg3_carry4:
     g "This is the building that I janitor...ize. The place where I'm a janitor."
     g "The location is great, and the view is killer. Best part about it? No rent."
     
-    show greg neutral
-    hide yin with char
+    hide yin
+    with char
+    show greg happy
 
     "He drops onto a purple floor pillow with a {i}foomp{/i}."
 
@@ -558,9 +552,10 @@ label greg3_pad4:
     ya "Come on, Yin. Don't be a lazy 'squatch."
     
     scene bg city1
+    show greg neutral
     with fade
-    
-    show greg neutral with char
+
+    play music "kangaroo.ogg" fadeout 1
 
     "Once Yin is up, Greg takes me on another breathtaking flight back to the ground. While I get my legs to stop wobbling, he inspects the wall of a narrow alleyway."
     
@@ -621,13 +616,12 @@ label greg3_cross_out3:
     g "Come on, let's find a clean wall to mark up!"
     
     scene bg city2
+    show greg neutral
     with fade
 
-    show greg neutral with char
+    "We travel a couple of blocks, heading toward the older, slummier side of the city. The only movement on the street is a flickering lamp."
     
-    play music "kangaroo.ogg" fadeout 1
-
-    "We travel a couple of blocks, heading toward the older, slummier side of the city. The only movement on the street is a flickering lamp. This is exactly the sort of place I wouldn't go at night, but why be afraid of muggers when your escort is a monster?"
+    "This is exactly the sort of place I wouldn't go at night, but why be afraid of muggers when your escort is a monster?"
     
     "I never really paid attention to the street art before now, but there's more than I expected. Big bubble letters on the side of an apartment building, stickers slapped on street signs, even a leering dragon made of dripping paint."
     
@@ -681,7 +675,7 @@ label greg3_passerby1:
     
     show greg wing neutral with char
 
-    "I'll admit, the sound of Greg dropping back to the floor startles me a little." with hpunch
+    "I'll admit, the sound of Greg dropping back to the floor startles me a little."
     
     p "Ah!!{w} Oh, you're done?"
     
@@ -704,7 +698,7 @@ label greg3_passerby2:
     
     show greg wing neutral with char
 
-    "He drops back down on the floor." with hpunch
+    "He drops back down on the floor."
     
     p "Wait. You're done?"
     
@@ -725,7 +719,7 @@ label greg3_passerby3:
     scene bg alley
     with fade
 
-    stop music fadeout 1
+    play music "city.ogg" fadeout 1 fadein 1
     
     "I duck into an alleyway where hopefully no one will see me. My heart is beating like crazy. Shouldn't Greg have briefed me on this?!"
     
@@ -764,9 +758,8 @@ label greg3_passerby3:
     g "Yeah, told you it'd be quick."
     
     scene bg city2
+    show greg neutral
     with fade
-
-    show greg neutral with char
 
     play music "kangaroo.ogg" fadeout 1
     
@@ -776,7 +769,7 @@ label greg3_passerby3:
     
 label greg3_passerby4:
     
-    show greg neutral
+    show greg happy
     
     g "Being a gargoyle has its perks. My tags are all over the city, on hard-to-reach walls. No one knows how I do it."
     p "That is wicked."
@@ -792,6 +785,9 @@ label greg3_passerby4:
     show greg neutral with char
 
     p "Why do you have to do so many walls?"
+
+    show greg smirk
+
     g "It's about staking a claim, baby. Making my presence known."
     
     show greg happy
@@ -809,6 +805,9 @@ label greg3_passerby4:
     g "Guess so."
     "I grab a paint can out of his backpack."
     p "Let me draw something!"
+
+    show greg annoyed
+
     g "What? Right here?"
     p "Yeah, next to yours. I'm making my debut as the winged street artist's bumbling sidekick."
     
@@ -885,7 +884,7 @@ label greg3_sidekick5:
     
     scene black
     with fade
-    
+
     stop music fadeout 1
 
     "Once we're done with our mayhem, Greg flies me to the top of a building. It's some sort of laundromat, or a company that sells washing machines, or something. I wasn't really paying attention."
@@ -924,7 +923,7 @@ label greg3_cigs1:
     
     p "Thanks."
     
-    "we both grab one, and lights us both up. I take a deep draft."
+    "We both grab one, and lights us both up. I take a deep draft."
     
     show greg annoyed
 
@@ -954,10 +953,13 @@ label greg3_cigs3:
     
     p "Oh, are you two dating?"
 
-    show greg neutral
+    show greg shock
 
     g "What? No, no, no. Just friends. Drinking buddies."
     p "Cool, cool."
+    
+    show greg neutral
+
     g "How about you, are you seeing anyone?"
     p "Nah."
     
@@ -1017,7 +1019,7 @@ label greg3_home1:
     g "I guess that's a tough situation to {i}Bea{/i} in."
     p "..."
     
-    show greg neutral
+    show greg worried
 
     g "You know, like, the name? Bea?"
     
@@ -1031,7 +1033,8 @@ label greg3_home2:
     show greg worried
 
     g "Oh."
-    p "And the worst part is that he's right! Like damn, my life really ground to a halt after I dropped out of college. My job sucks! And I'm losing touch with my friends!"
+    p "And the worst part is that he's right! Like damn, my life really ground to a halt after I dropped out of college."
+    p "My job sucks! And I'm barely in touch with my friends!"
     
     "Greg is silent for a few beats, making me think I said too much."
     
@@ -1040,9 +1043,9 @@ label greg3_home2:
     g "I guess you're losing your {i}touch{/i}."
     p "..."
     
-    show greg neutral
+    show greg worried
 
-    g "You know, like, losing touch with your friends? Losing your touch?"
+    g "You know, like, in touch with your friends? Losing your touch?"
     
     jump greg3_home4
    
@@ -1063,7 +1066,7 @@ label greg3_home3:
     g "I guess we left you in a {i}daze{/i}."
     p "..."
     
-    show greg neutral
+    show greg worried
     
     g "You know, like, the past few {i}days{/i}? Left you in a {i}daze{/i}?"
     
@@ -1088,7 +1091,7 @@ label greg3_home4:
 
     show greg happy
 
-    g "But I'm glad you did."
+    g "But I'm still glad you did."
     p "Me too."
     
     show greg neutral
@@ -1097,7 +1100,7 @@ label greg3_home4:
     
     g "I'd better get some sleep. There's a Cryptid Coalition meeting tomorrow."
     p "Really? So soon after the last one?"
-    g "Yep. This one's a regular meeting. Last time was because Mothman slipped up."
+    g "Yep. Last time was because Mothman slipped up. This one's our Halloween meeting."
     
     show greg smirk
 
@@ -1118,12 +1121,14 @@ label greg3_home4:
     
     "Yin and Yang must be sleepy too, because they don't make any quips on the way home. Or maybe they fell asleep in my bag. Either way, I appreciate the silence to work through my thoughts."
     
-    "It's crazy to think that falling down that hill changed my life forever. Now that I've met Greg and the others, I can't ever close my eyes to the hidden world of cryptids. Not that I'd ever want to. What kind of cryptid hunter would I be, otherwise?"
-    
     scene bg suburbannight
     with fade
     
     play music "forest_night.ogg" fadeout 1 fadein 1
+    
+    "It's crazy to think that falling down that hill changed my life forever. Now that I've met Greg and the others, I can't ever close my eyes to the hidden world of cryptids."
+    
+    "Not that I'd ever want to. What kind of cryptid hunter would I be, otherwise?"
 
     "As I round the bend to my apartment building, I wonder what I am to the cryptids. A liability, for knowing their secret? Just an onlooker? A friend? Or could I be something more?"
     

@@ -23,11 +23,11 @@ label day_2:
     
     "Bea angles her phone screen toward me. I lean across her bed in order to read it."
     
-    b "They're offering a $5000 dollar bounty for anyone that uncovers additional evidence of cryptids before the Fishtrap Cryptid Festival!"
+    b "They're offering a 5000 dollar bounty for anyone that uncovers additional evidence of cryptids before the Fishtrap Cryptid Festival!"
     
     p "Wow, that's a lot."
     
-    b "No kidding."
+    b "No kidding!"
     
     "I turn my attention back to my phone, trying to look nonchalant. Bea gives me a suspicious look, which I pretend I didn't see."
     
@@ -37,7 +37,7 @@ label day_2:
     
     if words:
         
-        "My phone buzzes, telling me that Greg took his turn on Letters with Pals. Apparently just he played a Y on my SNORT to make SNORTY. There is {i}no{/i} way that's a real word."
+        "My phone buzzes, telling me that Greg took his turn on Letters with Pals. Apparently he played a Y on my SNORT to make SNORTY, which I {i}refuse{/i} to believe is a real word."
         
         p "Ugh, fuck this game. I have, like, six consonants and a U. What am I supposed to make with that?"
         
@@ -45,7 +45,7 @@ label day_2:
         
         p "What do you mean? I'm fine."
         
-        "I play RUB, which is barely not enough to take the lead."
+        "I play CUP, which is barely not enough to take the lead."
         
         jump day2_words3
         
@@ -57,7 +57,11 @@ label day2_words3:
     
     b "I don't know, usually when the cryptid festival is coming up, you won't stop talking about Igopogo sightings or cryptid film screenings or whatever. Now you're all quiet."
     
-    "I idly open my Tweeter feed and stare it at, trying really hard not to think about the actual cryptid I hung out with yesterday. I've known Bea since high school, and she has an uncanny way of reading my mind. Whatever I tell her, I'd better make it convincing."
+    p "Well..."
+    
+    "I idly open my Tweeter feed and stare it at, trying really hard not to think about the actual cryptid I hung out with yesterday."
+    
+    "I've known Bea since high school, and she has an uncanny way of reading my mind. Whatever I tell her, I'd better make it convincing."
     
 menu:
 
@@ -120,11 +124,11 @@ label day2_quiet4:
     
     b "Don't get me wrong, I still think cryptids are all hoaxes and wishful thinking. But you must be finally rubbing off on me, because I'm starting to think..."
     
-    b "I mean, look at this. They're finding all sorts of weird footprints in the forest by the cemetery. And there's this weird tuft of fur!"
+    b "I mean, look at this. They're finding all sorts of weird footprints in the forest by the cemetery. And there's this tuft of fur!"
     
-    "Bea shows me her screen again. I rub my chin, trying to look curious rather than anxious. Could that belong to one of the Fishtrap crytids? Mothman? Frankie? Do phantom kangaroos even shed fur??"
+    "Bea shows me her screen again. I rub my chin, trying to look curious rather than anxious. Could that belong to one of the Fishtrap crytids? Mothman? Frankie? Do phantom kangaroos even shed fur?!"
     
-    p "Could be from a deer, maybe?"
+    p "Could be from a deer, maybe...?"
     
     b "Ugh, see what I mean? You're all boring now."
     
@@ -209,7 +213,7 @@ label day2_tension3:
     hide yang
     with char
     
-    "It's a chilly day, making me glad I brought a thick jacket with me. I stop my bike on the edge of campus, thinking about where to go next. Unlike me, Bea stayed in college, so I have to travel to her dorm to hang out. Thankfully, it's pretty close to my apartment."
+    "It's a chilly day, making me glad I brought a thick jacket with me. I stop my bike on the edge of campus. Unlike me, Bea stayed in college, so I have to travel to her dorm to hang out. Thankfully, it's pretty close to my apartment."
     
     "I look around furtively, as if the gaggle of frat boys nearby are paying me any attention. Then I pull the Cryptid Coalition paper out of my pocket, wrestling against the autumn breeze."
     

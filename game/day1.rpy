@@ -21,8 +21,6 @@ label day_1:
     scene bg convenience
     with fade
 
-    play music "light_hum.ogg" fadein 1
-    
     p "That'll be two forty-nine, please."
     
     t "Are you kidding? It's just a bottle of water."
@@ -57,14 +55,12 @@ label day1_water3:
     
     "The trucker just grunts, pays for the water, and saunters out of the convenience store. I sigh and relax against the countertop."
     
-    show yang annoyed
+    show yang close
     with char
     
     ya "Jeez, what a prick. It's not like you're in charge of the prices."
     
     show yang at slightright
-    with char
-    
     show yin annoyed at slightleft
     with char
     
@@ -72,10 +68,11 @@ label day1_water3:
     
     p "You're joking, right? He could probably pick me up and throw me like a football. Also, I would get fired."
     
+    show yang neutral 2
     show yin shock
     with char
     
-    yi "Who cares? Throw off the shackles of the working class! Sieze the means of production!!"
+    yi "Who cares? Give your boss a piece of your mind too! Throw off the shackles of the working class!!"
     
     p "Get back under the counter, there are cameras in here!"
     
@@ -94,7 +91,9 @@ label day1_water3:
     
     "If not for Yin and Yang's constant bickering reminding me of their presence, my cryptid experience would feel like a dream. It's still hard to believe it really happened."
     
-    "I didn't tell Bea, like Batu insisted. She wouldn't have believed me, anyway. I don't think she believed my story about following animal tracks and being attacked by a family of raccoons, either, but at least it made her stop questioning me."
+    "I didn't tell Bea, like Batu insisted. She wouldn't have believed me, anyway."
+    
+    "I don't think she believed my story about following animal tracks and being attacked by a family of raccoons, either, but at least it made her stop questioning me."
     
     "I idly unpause the video I was watching on my phone."
     

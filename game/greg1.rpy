@@ -34,7 +34,7 @@ label greg1:
     
 menu:
 
-    "Hey, it's [name]. Frankie gave me ur number":
+    "Hey, it's [name]. Frankie gave me your number":
         jump greg1_message1
 
     "What's up gargoyle boyo":
@@ -56,7 +56,7 @@ label greg1_message1:
     
     ya "Are you texting Greg?"
     
-    p "Maybe."
+    p "Maybe. Since when is my social life your business?!"
     
     hide yang
     with char
@@ -82,7 +82,7 @@ label greg1_message2:
     
     ya "Are you texting Greg?"
     
-    p "Maybe."
+    p "Maybe. Since when is my social life your business?!"
     
     hide yang
     with char
@@ -91,7 +91,7 @@ label greg1_message2:
     
     p "{size=+7}{font=Iceland-Regular.ttf}{i}It's poop legs{/i}{/font}{/size}"
     
-    g "{size=+7}{font=Iceland-Regular.ttf}{i}No way, how are yin and yang?{/i}{/font}{/size}"
+    g "{size=+7}{font=Iceland-Regular.ttf}{i}No way, how are you? How are yin and yang?{/i}{/font}{/size}"
     
     p "{size=+7}{font=Iceland-Regular.ttf}{i}They're fine, but they argue about EVERYTHING{/i}{/font}{/size}"
     
@@ -116,7 +116,7 @@ label greg1_message3:
     
     ya "Are you texting Greg?"
     
-    p "Maybe."
+    p "Maybe. Since when is my social life your business?!"
     
     hide yang
     with char
@@ -135,7 +135,7 @@ label greg1_message4:
     
     p "{size=+7}{font=Iceland-Regular.ttf}{i}Sorry, it's [name]. Just wanted to say hi{/i}{/font}{/size}"
     
-    g "{size=+7}{font=Iceland-Regular.ttf}{i}No way, how are yin and yang?{/i}{/font}{/size}"
+    g "{size=+7}{font=Iceland-Regular.ttf}{i}No way, how are you? How are yin and yang?{/i}{/font}{/size}"
     
     p "{size=+7}{font=Iceland-Regular.ttf}{i}They're fine, but they argue about EVERYTHING{/i}{/font}{/size}"
     
@@ -187,13 +187,12 @@ label greg1_message6:
     ya "Actually, I think they're right. Arguing is kind of our thing."
     
     hide yin
-    hide yang
-    with char
-    
+    hide yang    
     show yinyang 2
     
     yi "Oh yeah? When was the last time we argued about anything?!"
-    
+    ya "Ten minutes ago, when you told [name] to fight the trucker. And we're arguing right now!"
+
     show yinyang 1
     
     yi "Wait. Okay, I see your point."
@@ -217,39 +216,49 @@ label greg1_message6:
     
     "I wait for a long moment, but there's no reply. I didn't say something wrong, did I? Does he have a secret traumatic past involving the Madison Street Kwik Mart?"
     
-    "No, he's probably just busy draining dogs of blood or whatever gargoyles do during the day. I set down my phone and lean against the wall with a sigh."
+    "No, he's probably just busy draining dogs of blood or whatever gargoyles do during the day."
+    
+    "I set down my phone and lean against the wall with a sigh."
     
     show greg sun
     with char
 
-    "I'm almost bored enough to double text when a jangle alerts me to a new customer. It's a skinny guy in sunglasses and a black hoodie. I straighten my back slightly. People dressed like that always make me think we're about to get robbed. Maybe I just watch too many true crime videos."
+    "I've almost gotten bored enough to double text when a jangle alerts me to a new customer. It's a skinny guy in sunglasses and a black hoodie." 
     
-    "He scans the store, which makes me think he's looking for the bathroom. But then he heads directly toward me and reaches into his pocket, which makes me think, HOLY SHIT,{w=.5} WE'RE GETTING ROBBED."
+    "I straighten my back slightly. People dressed like that always make me think we're about to get robbed. Maybe I just watch too many true crime videos."
+    
+    "He scans the store, which makes me think he's looking for the bathroom. Then he heads directly toward me and reaches into his pocket, which makes me think, HOLY SHIT,{w=.5} WE'RE GETTING ROBBED."
     
     p "Um,{w=.5} hello,{w=.5} can I help you?"
     
     "The stranger pulls out something that looks like a dog biscuit, if dog biscuits were purple. Then he lifts his sunglasses and speaks in a familiar voice."
     
     show greg smirk
-    play music "greg.ogg"
+    play music "greg.ogg" fadeout 1
 
     g "Hey, have you seen any imps around here?"
     
     p "Greg!"
     
-    show yin shock at midleft with char
+    show yin shock at midleft 
+    show yang neutral at midright
+    with char
+    show greg neutral
 
-    "Yin pokes their head over the counter and gasps."
+    "Yin and Yang poke their head over the counter."
 
     yi "Is that for us?"
     
+    show greg smirk
+
     g "Bon appetit."
 
-    hide yin
-    with char
-
     "He tosses the dog biscuit over the counter, and Yin and Yang immediately dive after it."
-    
+
+    hide yin
+    hide yang
+    with moveoutbottom
+
     show greg neutral
 
     g "Imp treats. They can't get enough of them."
@@ -364,7 +373,7 @@ label greg1_marlboros2:
     with easeoutbottom
     show greg neutral
 
-    g "Are you gonna give me my cancer sticks or not?"
+    g "Are you going to give me my cancer sticks or not?"
     
     p "Sure, sure."
     
@@ -392,6 +401,9 @@ label greg1_marlboros3:
     
     yi "He's starving us! Oh, the humanity!"
     
+    hide yin
+    hide yang
+    with char
     show greg smirk
 
     "Greg pockets the cigarettes and grins toothily at me."
@@ -400,7 +412,7 @@ label greg1_marlboros3:
     
     p "What, right now? I have two hours left in my shift."
 
-    show greg neutral
+    show greg upset
     
     g "Come on, I wanna go visit the churro stand."
     
@@ -429,7 +441,7 @@ label greg1_get_out1:
 
     g "But I want churros {i}now{/i}."
     
-    show yang annoyed
+    show yang annoyed at midright with char
     
     ya "Don't be whiny, Greg."
     
@@ -448,7 +460,6 @@ label greg1_get_out1:
     p "'Kay!"
     
     hide greg
-    hide yin
     hide yang
     with char
 
@@ -459,10 +470,8 @@ label greg1_get_out1:
     "My replacement takes my spot behind the counter – my manager never came back, come to think of it – and I head outside with Yin and Yang hidden in my bag."
     
     scene bg gas
-    with fade
-    
     show yin shock
-    with char
+    with fade
     
     yi "Finally! I thought I'd never see the sun again!"
     
@@ -541,7 +550,7 @@ label greg1_get_out3:
     
     p "Skate fast, eat ass, right?"
     
-    show yin shock
+    show yin shock at midleft with char
     
     yi "Wooo! That's the spirit!!"
 
@@ -554,9 +563,8 @@ label greg1_get_out3:
 label greg1_get_out4:
     
     scene bg gas
-    with fade
-    
     show greg neutral
+    with fade
 
     "I quickly close down the shop and follow Greg outside, with Yin and Yang hidden in my bag."
     
@@ -616,9 +624,13 @@ label greg1_bike1:
     scene bg plaza
     with fade
 
-    play music "mothman.ogg" fadeout 1
+    play music "batu.ogg" fadeout 1
     
-    "It's not flying, but cycling with Greg is exhilarating in its own way. Also, not particularly safe. We manage to arrive at the main plaza without any accidents. Well, without any major accidents. Let's just say we arrived in one piece."
+    "It's not flying, but cycling with Greg is exhilarating in its own way. Also, not particularly safe. We manage to arrive at the main plaza without any accidents."
+    
+    "Well, without any {i}major{/i} accidents."
+    
+    "Let's just say we arrived in one piece."
     
     jump greg1_bike3
     
@@ -646,7 +658,11 @@ label greg1_bike2:
     
     play music "batu.ogg" fadeout 1
 
-    "Despite me shouting bad words for the first few minutes of the trip, we manage to arrive at the main plaza without any accidents. Well, without any major accidents. Let's just say we arrived in one piece."
+    "Despite me shouting bad words for the first few minutes of the trip, we manage to arrive at the main plaza without any accidents."
+    
+    "Well, without any {i}major{/i} accidents." 
+    
+    "Let's just say we arrived in one piece."
     
     jump greg1_bike3
     
@@ -678,7 +694,7 @@ label greg1_bike3:
     
     show greg happy with char
 
-    g "Churros, nice and warm."
+    g "Churros, nice and warm!"
     
     jump greg1_churros1
     
@@ -701,7 +717,7 @@ label greg1_churros2:
     show greg neutral
 
     g "Don't worry about it. My treat."
-    p "Oh, heck yeah. Thanks."
+    p "Oh, heck yeah. Thanks!"
     
     "We tacitly wander over to the fountain at the center of the plaza. I sneak one of the fried dough sticks into my bag for Yin and Yang to snack on."
     
@@ -722,7 +738,7 @@ label greg1_churros3:
     
 label greg1_churros4:
     
-    "I give the fountain a critical look. It features a big sculpture of a chunk of cheese and a basket of cranberries, with water spouting out of the top. I think it's supposed to represent Wisconsin's primary exports, or something. It's pretty much the worst fountain in the world."
+    "The fountain features a big sculpture of a chunk of cheese and a basket of cranberries, with water spouting out of the top. I think it's supposed to represent Wisconsin's primary exports, or something. It's pretty much the worst fountain in the world."
     
     "I peer down into the water. The floor is dotted with coins of varying denominations, occasional stray leaves, and a single baby's pacifier."
     
@@ -731,7 +747,7 @@ label greg1_churros4:
     
     "I wonder if he meant anything by buying me food, or if he was just being friendly. I'm probably overthinking this. Churros aren't exactly a romantic gesture, right?"
     
-    "I look over at Greg, who's shooing away a pigeon. His teeth are unusually sharp, and one of his lower incisors is made of gold. Now might be a good time to get to know him better."
+    "I look over at Greg, who's shooing away a pigeon. Now might be a good time to get to know him better."
     
     jump greg1_convo1
     
@@ -758,7 +774,7 @@ label greg1_interests1:
     
     p "So what are you interested in?"
     g "Hm?"
-    p "Like, what do you do in your free time?"
+    p "Like, what do you do in your free time? What are your hobbies?"
     
     show greg annoyed
 
@@ -815,6 +831,9 @@ label greg1_interview4:
 
     g "But yeah, I like painting walls."
     p "Painting walls?"
+
+    show greg smirk
+
     g "Doing street art. Graffiti. Whatever you call it."
     
 menu:
@@ -870,7 +889,9 @@ label greg1_graffiti2:
     
     "Greg stretches and leans against a marble wall."
 
-    g "Being a cryptid's the easy life. Most of the time I'm shopping, flying around, hanging out with Holly. Playing mobile games. That kind of stuff."
+    show greg smirk
+    
+    g "Being a cryptid's the easy life. I spend my time shopping, flying around, hanging out with Holly. Playing mobile games. That kind of stuff."
     p "Hey, we should play Letters with Pals!"
     
     show greg annoyed
@@ -937,6 +958,9 @@ label greg1_taiwan1:
 label greg1_day1:
     
     p "So how was your day?"
+
+    show greg smirk
+
     g "Like I said, pretty boring, until I met you."
     
     "I won't lie, that made me feel a little fluttery. I'm not sure if it's a compliment or not, but I'll take what I can get."
@@ -972,8 +996,8 @@ label greg1_end1:
     
     show greg shocked
 
-    g "Oh, damn, you're right. I told Holly I'd play ping pong with her tonight!"
-    p "Heck, don't want to miss that!"
+    g "Damn, you're right. I told Holly I'd play ping pong with her tonight!"
+    p "Oh yeah, don't want to miss that."
     
     show greg neutral
 
@@ -1005,7 +1029,7 @@ label greg1_wish1:
     
     $ snow = True
     
-    p "...We'll get snow tomorrow. Lots of it. "
+    p "We'll get snow tomorrow. Lots of it. "
 
     show greg happy
 
@@ -1018,7 +1042,7 @@ label greg1_wish1:
     
 label greg1_wish2:
     
-    p "...You and the other cryptids will stay safe."
+    p "You and the other cryptids will stay safe."
     
     show greg upset
 
@@ -1034,7 +1058,7 @@ label greg1_wish2:
     
 label greg1_wish3:
     
-    p "...That the Sackers will win the Powerbowl this year."
+    p "That the Sackers will win the Powerbowl this year."
     
     show greg smirk
 
@@ -1050,7 +1074,7 @@ label greg1_wish3:
     
 label greg1_wish4:
     
-    p "...That I'll get to see you again."
+    p "That I'll get to see you again."
     
     "I put on a crooked, hopeful grin. Greg snorts."
 
@@ -1070,7 +1094,7 @@ label greg1_wish4:
     
 label greg1_wish5:
     
-    g "I'm gonna head out. I'll catch ya later."
+    g "I'm going to head out. I'll catch ya later."
     
 menu:
     "Thanks for coming all the way to see me.":
@@ -1104,6 +1128,9 @@ label greg1_bye1:
 label greg1_bye2:
     
     p "See ya later, alligator."
+
+    show greg smirk
+
     g "In a while, crocodile."
 
     hide greg with char
@@ -1115,6 +1142,9 @@ label greg1_bye2:
 label greg1_bye3:
     
     p "See ya later."
+
+    show greg smirk
+
     g "Don't be a stranger."
 
     hide greg with char
@@ -1140,7 +1170,7 @@ label greg1_bye4:
     
     show yin close
     
-    yi "Just a little observation of mine, kid. Take it or leave it~"
+    yi "Just a little observation of mine, kid. Take it or leave it~!"
     p "I think you're crazy."
     
     scene bg suburban
@@ -1148,7 +1178,7 @@ label greg1_bye4:
 
     play music "forest_night.ogg" fadeout 1
     
-    "I unlock my bike and start the long trip back to Fishtrap. The air is starting to get a little crisper, and the setting sun throws shadows over the street. My mind drifts as the skyscrapers turn into discount Indian restaurants and then into trees."
+    "I unlock my bike and start the long trip back to Fishtrap. The air is starting to get a little crisper, and the setting sun throws shadows over the street. As time goes on, the skyscrapers turn into discount Indian restaurants and then into trees."
     
     "I don't want to get ahead of myself, but I can't help but let my imagination run away. We'd be quite a pair, huh? A gargoyle and a cryptid hunter."
     

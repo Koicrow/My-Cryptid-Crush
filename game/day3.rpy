@@ -23,7 +23,7 @@ label day_3:
     
     "I'm enjoying a lazy evening when the ringing of the doorbell startles me right off my bed. I hit my ankle on my dresser on the way down."
     
-    p "Ow! Coming!"
+    p "Ow! Coming!" with vpunch
     
     p "Yin, Yang, hide!"
     
@@ -47,7 +47,7 @@ label day_3:
     
     d "Well, I was a little concerned when you didn't show up yesterday, bud."
     
-    "I stare at him. It's taking me longer than I'd like to admit to figure out what he's talking about. It must be obvious, because Dad gives me a hint."
+    "I stare at him. It's taking me longer than I'd like to admit to figure out what he's talking about. It must be obvious that I'm clueless, because Dad gives me a hint."
     
     d "Let me tell you, those boxes did a number on my old bones..."
     
@@ -156,7 +156,7 @@ label day3_alibi4:
         
         "He gestures expectantly with his hand."
 
-        "A better job?":
+        "A better job.":
             jump day3_hunting1
 
         "A giraffe?":
@@ -214,9 +214,9 @@ label day3_hunting3:
     
     p "Love you, too."
     
-    "Like that, he's gone again. I close the door."
+    "Just like that, he's gone again. I close the door."
     
-    "I collapse on my bed and put my face in my hands. Ugh. Hanging out with cryptids really makes you forget about your regular, non-cryptid problems."
+    "I collapse on my bed and put my face in my hands. Hanging out with cryptids really makes you forget about your regular, non-cryptid problems."
     
     show yin neutral with char
 
@@ -239,7 +239,6 @@ label day3_hunting3:
     ya "They're an adult, they can handle it."
 
     show yin neutral
-    show yang neutral 2
     
     p "You know what? It's Saturday night, I have nothing to do, I'm going out. Maybe one of the others is free."
     

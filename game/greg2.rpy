@@ -64,7 +64,7 @@ label greg2_great3:
     
     g "{size=+7}{font=Iceland-Regular.ttf}{i}Sick, I'll be there in 15{/i}{/font}{/size}"
     
-    "I shove my phone back into my pocket and mount my bike, maybe a little more excited than I should be. I start cycling toward the inner city."
+    "I shove my phone back into my pocket and mount my bike, maybe a little more excited than I should be."
     
     "It's been a hot second since I've been to the mall. I wonder if that comic book store is still there?"
     
@@ -82,7 +82,7 @@ label greg2_great3:
     
     show yang annoyed
     
-    ya "Yin, you saw him a day ago."
+    ya "Yin, it's been less than two days."
     
     show yin neutral
     with char
@@ -124,9 +124,9 @@ label greg2_great3:
     
     g "Oh, what about it?"
     
-    p "You know what, never mind. I'll find it."
+    p "You know what, never mind. I'll find you."
     
-    g "It's the part with a greenish roof, if that helps."
+    g "I'm by the section with a greenish roof, if that helps."
     
     p "No, that doesn't help. Why would I know the color of the roofs?"
     
@@ -134,7 +134,7 @@ label greg2_great3:
     
     "After a few minute of this and a half-circuit around the massive building, I catch sight of Greg leaning against a flagpole. I hang up the call and hurry toward him."
     
-    show greg neutral with char
+    show greg smirk with char
 
     g "Hey, there you are! Took you long enough."
     
@@ -163,8 +163,6 @@ label greg2_hi1:
 label greg2_hi2:
     
     p "Hi again, hot wings."
-    
-    show greg smirk
 
     "Greg snorts in disbelief. My face flushes as I realize what I just said."
     
@@ -190,14 +188,15 @@ label greg2_hi3:
 label greg2_hi4:
     
     scene bg mall
+    show greg neutral
     with fade
 
     play music "mothman.ogg" fadeout 1
-    
-    show greg neutral with char
 
     "Stepping through the doors is like stepping onto another planet. A rush of warm air, the noise of a thousand shoppers, and the faint smell of cinnamon rolls hit me all at once. It's as crowded as a can of sardines during rush hour."
     
+    show yang neutral 2 at midright with char
+
     ya "Wow, it's loud in here."
     
     show yin shock at midleft with char
@@ -205,7 +204,7 @@ label greg2_hi4:
     yi "Yesss, chaos,{w=.5} CHAOS!"
     g "Oh, there you are! How are you two holding up?"
     
-    show yang neutral 2 at midright with char
+    show yang neutral
 
     ya "Pretty well, thank you."
     
@@ -216,7 +215,7 @@ label greg2_hi4:
     with char
     
     p "Hey, there's like a billion people here. Aren't you worried someone's going to notice you?"
-    g "You've got it all backwards. Out in the countryside, I gotta be careful who sees me. Here, I can hide in plain sight."
+    g "You've got it all backwards. Out in the countryside, I have to be careful who sees me. Here, I can hide in plain sight."
     
     "He looks around, then waves at a chubby woman exiting Hot Tropics with more metal pieces in her face than I have in my wallet."
     
@@ -232,7 +231,7 @@ label greg2_hi4:
 
     "I rub my neck as she walks away."
     
-    p "That seems almost too easy."
+    p "That seemed almost too easy."
     g "Tell me about it."
     
     "The two of us start weaving our way through the crowd, no particular destination in mind. The sensations wash over me like a sea of humanity, which a really gross analogy, come to think of it."
@@ -252,7 +251,7 @@ menu:
         
 label greg2_sea1:
     
-    "...Exciting."
+    "Exciting."
     
     p "Man, I should come here more often. Living in a little town like Fishtrap makes you forget that this many people exist in the whole world."    
     g "Lucky. I live right in the city center, so I have to deal with stinky humans all day. That's why I like it better at night."
@@ -261,7 +260,7 @@ label greg2_sea1:
     
 label greg2_sea2:
     
-    "...Comforting."
+    "Comforting."
     
     p "It's nice to be back here. You don't get this bustle and noise in a little town like Fishtrap. Reminds me of where I grew up."
     g "Oh yeah? I live right in the city center, so I guess I'm used to it. I like it better at night, though."
@@ -270,7 +269,7 @@ label greg2_sea2:
     
 label greg2_sea3:
     
-    "...Unnerving."
+    "Unnerving."
     
     p "Man, being around this many people makes me nervous. This is why I moved to a small town like Fishtrap in the first place."
     g "Eh, it's not my favorite either."
@@ -313,7 +312,7 @@ label greg2_main1:
             $ clothes_done = True
             jump greg2_clothes1
             
-        "The comic store." if comics_done == False:
+        "The comic book store." if comics_done == False:
             $ comics_done = True
             jump greg2_comics1
             
@@ -322,7 +321,7 @@ label greg2_main1:
             
 label greg2_clothes1:
 
-    p "...Looking at some clothes?"
+    p "Looking at some clothes?"
     
     show greg neutral
 
@@ -413,10 +412,10 @@ label greg2_socks4:
     
     show greg smirk
 
-    "Greg rolls his eyes, but a little grin belies his true feelings. He snatches the socks from my hand and stuffs them into his pocket."
+    "Greg rolls his eyes, but a little grin betrays his true feelings. He snatches the socks from my hand and stuffs them into his pocket."
     
     g "Thanks, I guess."
-    p "Don't mention it~"
+    p "Don't mention it~!"
     
     hide greg with char
     show yang at slightright
@@ -506,13 +505,10 @@ label greg2_socks3:
 label greg2_socks6:
     
     scene bg clothing
-    with fade
-    
     show greg neutral
+    with fade
 
-    "Most of these stores are big and expensive, with larger-than-life pictures of models wearing something called Pumpkin Passion Lipstick. Eventually we find a second-hand clothing store – the only kind I can afford – and step inside. "
-    
-    "Greg glances around, looking lost. I start leading him down one of the aisles."
+    "Most of these stores are big and expensive, with larger-than-life pictures of models wearing things like Pumpkin Passion Lipstick. Eventually we find a second-hand clothing store – the only kind I can afford – and step inside. "
     
     p "Anything you're looking for, besides socks?"
     g "Not really. I spent most of my paycheck on new paint, anyway."
@@ -526,7 +522,7 @@ label greg2_socks6:
     
     show greg neutral
 
-    "I wonder what {i}I'm{/i} looking for. I'm not sure if my bank account can tank a shopping spree right now, but window shopping never hurt anyone, right?"
+    "I wonder what {i}I'm{/i} looking for. I'm not sure if my bank account can take a shopping spree right now, but window shopping never hurt anyone, right?"
     
 menu:
     
@@ -565,6 +561,7 @@ label greg2_spree5:
     "He saunters off toward the socks. I follow behind."
     
     scene bg mall
+    show greg neutral
     with fade
     
     "Soon, we step out of the relative peace of the store and back into the throng of shoppers. Greg shoulders a bag of socks."
@@ -623,11 +620,10 @@ label greg2_spree1:
     "I'm not proud of what happened next. Long story short, I'm now short on rent for November."
     
     scene bg mall
+    show greg neutral
     with fade
     
-    show greg neutral with char
-
-    "Eventually, I step back into the crowded hallways, a bloated shopping bag dangling from my hand."
+    "Eventually, we step back into the crowded hallways, a bloated shopping bag dangling from my hand."
     
     show greg smirk
 
@@ -695,9 +691,8 @@ label greg2_spree4:
     p "Eh, I wasn't loving it anyway. Let's just get your socks."
     
     scene bg mall
+    show greg neutral
     with fade
-    
-    show greg neutral with char
 
     "I duck into the room and change into my regular clothes. Soon, we step out of the relative peace of the store and back into the throng of shoppers. Greg shoulders a bag of socks."
     
@@ -735,9 +730,8 @@ label greg2_spree7:
     p "I'm looking out for ya, pal."
     
     scene bg mall
+    show greg neutral
     with fade
-    
-    show greg neutral with char
 
     "Eventually, we get Greg some socks and step back out into the crowded hallways."
     
@@ -767,9 +761,8 @@ label greg2_spree8:
     g "Eh, can't afford it anyway."
     
     scene bg mall
+    show greg neutral
     with fade
-    
-    show greg neutral with char
 
     "Eventually, we get Greg some socks and step back out into the crowded hallways."
     
@@ -783,7 +776,7 @@ label greg2_comics1:
     
     $ comics = True
     
-    p "...The comic book store? My dad used to take me there all the time."
+    p "The comic book store? My dad used to take me there all the time."
     
     show greg smirk
 
@@ -816,7 +809,7 @@ label greg2_comics1:
         
 label greg2_mountains1:
     
-    p "...Peaceful."
+    p "Peaceful."
     
     show greg upset
 
@@ -826,7 +819,7 @@ label greg2_mountains1:
     
 label greg2_mountains2:
     
-    p "...Boring."
+    p "Boring."
     
     show greg smirk
 
@@ -864,7 +857,7 @@ label greg2_mountains3:
 
     show greg neutral with char
     
-    "We arrive at the comic store before long. It must have been two or three years since I've been here, but it's exactly the same. The bright yellow walls, the ceiling-high shelves, the claustrophobic amount of action posters."
+    "We arrive at the comic book store before long. It must have been two or three years since I've been here, but it's exactly the same. The bright yellow walls, the ceiling-high shelves, the claustrophobic amount of action posters."
     
     "Hell, the life-sized Mister U.S.A. shield still has a scratch on it from when I knocked it over at age twelve. Yes, it's {i}that{/i} old."
     
@@ -888,7 +881,7 @@ label greg2_mountains3:
         
 label greg2_genre1:
     
-    "...Superhero comics. What can I say? I was raised on the classics."
+    "Superhero comics. What can I say? I was raised on the classics."
     
     p "Wow, {i}Fleaman{/i} is still a thing?"
     
@@ -907,7 +900,7 @@ label greg2_genre1:
     
 label greg2_genre2:
     
-    "...Horror. Zombies, ghosts, eldritch horrors, you name it. To my delight, the store has put up a display of spooky comic books for Halloween."
+    "Horror. Zombies, ghosts, eldritch horrors, you name it. To my delight, the store has put up a display of spooky comic books for Halloween."
     
     p "Ooh, {i}Helldude{/i}. I've wanted to get into that since the movie came out."
     
@@ -924,7 +917,7 @@ label greg2_genre2:
     
 label greg2_genre3:
     
-    "...Sci-fi. Sometimes the real world is boring, you know?"
+    "Sci-fi. Sometimes the real world is boring, you know?"
     
     p "You know, I've always meant to get into {i}Fabulous Five{/i}."
     
@@ -969,13 +962,22 @@ label greg2_genre4:
     yi "{i}Do it.{/i} You said you were going to find them illegally, anyway!"
     p "That's different!"
     
-    show yin neutral
-    show yang close
+    hide greg
+    hide yin
+    hide yang
+    show yinyang 1
+    with char
 
     ya "You shouldn't steal it {i}or{/i} pirate it. You wouldn't download a house, would you?"
+
+    show yinyang 2
+
+    yi "Come on, whose side are you on? [name]'s, or the megacorporations that publish these comic books?!"
     p "You know, I know you're not really an angel and a demon, but you fulfill the roles very well."
     
-    show yang neutral 2
+    hide yinyang
+    show yang close at slightright
+    show yin annoyed at slightleft
 
     ya "Thank you!"
     p "Anyway, I appreciate your input, but I've already decided what I'm going to do."
@@ -996,6 +998,11 @@ label greg2_steal1:
     show yang annoyed
 
     yi "Yes, yes, yes!"
+    
+    show yin at midleft
+    show yang at midright
+    show greg smirk
+    with char
     
     g "Sick. Just follow my lead."
     
@@ -1023,8 +1030,9 @@ label greg2_steal1:
     with vpunch
     extend " BEEP.{nw}"
     with vpunch
-    extend " BEEP.{/i}"
+    extend " BEEP.{nw}"
     with vpunch
+    extend "{/i}"
     
     "I freeze as the detector gate thingy goes off. I only have a split second to make a decision."
     
@@ -1060,20 +1068,19 @@ label greg2_steal2:
     show greg smirk with char
     
     g "Woo! That was great!"
-    
-    show greg neutral
+
     show yin shock at midleft with char
 
     yi "Hard agree!"
     p "So you took the time to block the camera, but you didn't have a plan for the detector gate thingy??"
     
     hide yin with char
-    show greg smirk
+    show greg happy
 
     g "I did have a plan. Run like hell."
     "Greg smirks at me. Instead of deigning him with a response, I sit down on the closed toilet with a huff."
     
-    show greg neutral
+    show greg smirk
 
     p "Man, this comic book better be freaking worth it."
     
@@ -1088,7 +1095,9 @@ label greg2_steal2:
     hide yang with char
     show greg neutral
 
-    "After we catch our breath, Greg and I peek out of the bathroom. There are no alarms or mall cops or anything out of place, except a couple of old people giving us judgemental stares for going into the bathroom together. Flushing at the implication, I grab my bag and hurry outside."
+    "After we catch our breath, Greg and I peek out of the bathroom. There are no alarms or mall cops or anything out of place, except a couple of old people giving us judgemental stares for going into the bathroom together."
+    
+    "Flushing at the implication, I grab my bag and hurry outside."
     
     p "Why don't we do something a little more relaxing?"
     g "Sure, sure."
@@ -1118,9 +1127,8 @@ label greg2_steal3:
     g "Ah, whatever. Guess you have a point."
     
     scene bg mall
+    show greg neutral
     with fade
-    
-    show greg neutral with char
 
     "We spend a few more minutes browsing the comic books, but eventually leave empty-handed."
     
@@ -1147,17 +1155,20 @@ label greg2_leave1:
     p "Come on, let's go."
     
     scene bg foodcourt
+    show greg neutral
     with fade
     
     if renpy.music.get_playing(channel='music') != "mothman.ogg":
         play music "mothman.ogg" fadeout 1
 
-    show greg neutral
-
     "Before long, I step over a discarded, mustard-stained napkin that's a sure sign of our destination."
     
     p "Oh, man. Lots of fond memories of eating here as a kid. Hamburger Queen, always Hamburger Queen."
-    g "I'm more of a Panda Central guy myself. You know, I didn't have fast food until I was sixteen."
+    g "I'm more of a Panda Central guy myself."
+
+    show greg annoyed 
+
+    g "You know, I didn't have fast food until I was sixteen."
     p "No. That's cruel and unusual."
     
     show greg smirk
@@ -1175,12 +1186,13 @@ label greg2_leave1:
     
     p "Pssst. Yin, Yang. What does Greg like to drink?"
     
-    show yang neutral 2 at slightright
+    show yang neutral 2
 
     ya "Cherry soda."
     
-    show yang at slightright with char
-    show yin shock at slightleft with char
+    show yang at slightright 
+    show yin shock at slightleft
+    with char
 
     yi "Iced coffee!"
     p "Is this a \"one tells the truth, the other tells only lies\" situation?"
@@ -1201,15 +1213,17 @@ label greg2_leave1:
         
 label greg2_drink1:
     
-    "...Cherry soda. Yang is the more trustworthy of the two, right? I get a root beer for myself, while I'm at it."
+    "Cherry soda. Yang is the more trustworthy of the two, right? I get a root beer for myself, while I'm at it."
     
     hide yin
     hide yang
     with char
 
+    "I find us a table for two, complete with complementary discarded straw wrappers. Romantic."
+
     show greg neutral with char
-    
-    "I find us a table for two, complete with complementary discarded straw wrappers. Romantic. Greg soon shows up holding a to-go box full of lo mein."
+        
+    "Greg soon shows up holding a to-go box full of lo mein."
     
     p "Hey, Greg! Got you a cherry soda."
     
@@ -1237,7 +1251,7 @@ label greg2_drink2:
     
     $ coffee = True
     
-    "...Iced coffee. Why not? Everyone likes iced coffee."
+    "Iced coffee. Why not? Everyone likes iced coffee."
     
     hide yin
     hide yang
@@ -1294,7 +1308,7 @@ label greg2_drink2:
     
 label greg2_drink3:
     
-    "...Hot chocolate, with plenty of marshmallows. I get one for myself, too. Forget Yin and Yang. I remember what Greg said when I texted him earlier."
+    "Hot chocolate, with plenty of marshmallows. I get one for myself, too. Forget Yin and Yang. I remember what Greg said when I texted him earlier."
     
     hide yin
     hide yang
@@ -1315,7 +1329,7 @@ label greg2_drink3:
     g "Thank Nessie, I've been craving hot chocolate since forever. I really appreciate it."
     p "No probs."
 
-    show greg neutral
+    show greg smirk
        
     "He takes a gentle sip from the steaming cup."
     
@@ -1325,6 +1339,8 @@ label greg2_drink3:
     
 label greg2_drink4:
     
+    show greg neutral
+
     "Greg snaps apart a pair of disposable chopsticks, then starts going to town on the lo mein. He really does eat like a carnivore."
     
     p "Wow, those noodles must be good, huh?"
@@ -1337,17 +1353,17 @@ label greg2_drink4:
     g "Not as good as the Chinese place on Goda Street. But it'll do."
     p "Oh yeah? I don't think I've been there."
 
-    show greg neutral
+    show greg happy
     
     g "I'm telling you, it's the best. It's just a few blocks from my place. The guy there knows me by name."
     p "He doesn't know that you're a gargoyle, right?"
     
-    "Greg shrugs."
-    
     show greg annoyed
+    
+    "Greg shrugs."
 
     g "I'm sure he's noticed that I look kinda weird. He's probably just ignoring it to be polite."
-    p "Wait, are you telling me that the only thing standing between you and discovery... is people's manners??"
+    p "Wait, are you telling me that the only thing standing between you and discovery... is people's manners?!"
     
     show greg smirk
 
@@ -1357,7 +1373,8 @@ label greg2_drink4:
 
     "Greg trails off as he munches on his noodles."
     
-    g "You're a cryptid hunter – you should know this better than anybody. No matter how sketchy or fake the footage is, if someone expects to see a cryptid, they'll see a cryptid. And if they expect to see a human when they look at me, they'll see a human."
+    g "You're a cryptid hunter – you should know this better than anybody."
+    g "No matter how sketchy or fake the footage is, if someone expects to see a cryptid, they'll see a cryptid. And if they expect to see a human when they look at me, they'll see a human."
     
     show greg annoyed
 
@@ -1375,7 +1392,7 @@ label greg2_noodles2:
     
     p "That's dangerous! What if one of them tells the police? Or the government?"
     
-    show greg neutral
+    show greg annoyed
 
     g "Like I said, never happened before."
     p "Still, you should be more careful, Greg. There could be serious consequences, especially with so many cryptid hunters in the area."
@@ -1383,7 +1400,7 @@ label greg2_noodles2:
     show greg upset
 
     g "Ugh, you're starting to sound like Batu. I'm a big boy, alright? I know how to watch out for myself."
-    g "Besides, I have wings. If they {i}do{/i} find me, I'll just fly to another state."
+    g "Besides, I have wings. By the time they start looking for me in Wisconsin, I'll be in Nevada."
     
     p "I'm just worried about you, is all."
     
@@ -1414,7 +1431,7 @@ label greg2_noodles4:
     show greg smirk
 
     g "I don't hold the South Carolina hot dog-eating record for nothing!"
-    p "You hold {i}what{/i} now?"
+    p "You hold the {i}what{/i}?"
     
     "Greg winks and gets up to throw his trash away. I huff and collect the rest of my stuff as well."
     
@@ -1440,7 +1457,9 @@ label greg2_noodles4:
         p "Wish came true."
         g "Sure did."
         
-        scene bg mallsnow
+        scene bg mallsnow 
+        show greg neutral
+        with dissolve
 
         "Tiny snowflakes meander through the air, in no rush to reach their destination. Then they hit the pavement and disappear, as if they're made of nothing. It's very poetic, if you're the kind of person who's into that."
         
